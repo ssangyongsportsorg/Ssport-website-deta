@@ -3,6 +3,9 @@ import matter from 'gray-matter';
 
 export default function TagPage({ tag, posts }) {
   return (
+    {posts.map(post => {
+            //extract slug and frontmatter
+            const {slug, frontmatter} = post
     <div>
       <h1>Tag: {tag}</h1>
       <ul>
