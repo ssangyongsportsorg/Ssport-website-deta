@@ -6,12 +6,13 @@ export default function TagPage({ tag, posts }) {
     {posts.map(post => {
             //extract slug and frontmatter
             const {slug, frontmatter} = post
+              const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
     <div>
       <h1>Tag: {tag}</h1>
       <ul>
         {posts.map((post) => (
-          <li key={post.slug}>
-            <a href={`/blog/${post.slug}`}>{post.frontmatter.title}</a>
+          <li key={slug}>
+            <a href={`/blog/${slug}`}>{title}</a>
           </li>
         ))}
       </ul>
