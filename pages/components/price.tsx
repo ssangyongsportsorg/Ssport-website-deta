@@ -3,104 +3,120 @@ import styles from './Button.module.css';
 
 function price() {
   return (
-<section className="bg-dark dark:bg-gray-900">
-  <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-    <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-        選擇適合你的
-        <span className={styles.abc}>價格</span>
-      </h2>
-      <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-       這裡提供了價格給你參考
-      </p>
-    </div>
-    <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-      <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-        <h3 className="mb-4 text-2xl font-semibold">基本計畫</h3>
-        <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-         半年繳
+<section>
+  <div className="bg-white py-24 sm:py-32">
+    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-2xl sm:text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          選擇適合你的價格
+        </h2>
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          這裡提供了價格給你參考
         </p>
-        <div className="flex justify-center items-baseline my-8">
-          <span className="mr-2 text-5xl font-extrabold">$500</span>
-          <span className="text-gray-500 dark:text-gray-400">/month</span>
-        </div>
-        <ul role="list" className="mb-8 space-y-4 text-left">
-          <li className="flex items-center space-x-3">
-            <svg
-              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <span>cdn加強</span>
-          </li>
-          <li className="flex items-center space-x-3">
-            <svg
-              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <span>不出賣數據</span>
-          </li>
-          <li className="flex items-center space-x-3">
-            <svg
-              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <span>
-             同時共用人數: <span className="font-semibold">3</span>
-            </span>
-          </li>
-          <li className="flex items-center space-x-3">
-            <svg
-              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <span>
-              高級幫助: <span className="font-semibold">3個月</span>
-            </span>
-          </li>
-          
-        </ul>
-        <Link
-          href="/c"
-          className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
-        >
-          聯繫我們
-        </Link>
       </div>
+      <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+        <div className="p-8 sm:p-10 lg:flex-auto">
+          <h3 className="text-2xl font-bold tracking-tight text-gray-900">
+            基本計畫
+          </h3>
+          <p className="mt-6 text-base leading-7 text-gray-600">半年繳</p>
+          <div className="mt-10 flex items-center gap-x-4">
+            <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">
+              What’s included
+            </h4>
+            <div className="h-px flex-auto bg-gray-100" />
+          </div>
+          <ul
+            role="list"
+            className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
+          >
+            <li className="flex gap-x-3">
+              <svg
+                className="h-6 w-5 flex-none text-indigo-600"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              cdn加強
+            </li>
+            <li className="flex gap-x-3">
+              <svg
+                className="h-6 w-5 flex-none text-indigo-600"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              不出賣數據
+            </li>
+            <li className="flex gap-x-3">
+              <svg
+                className="h-6 w-5 flex-none text-indigo-600"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              同時共用人數: 3
+            </li>
+            <li className="flex gap-x-3">
+              <svg
+                className="h-6 w-5 flex-none text-indigo-600"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              專人協助
+            </li>
+          </ul>
+        </div>
+        <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+          <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+            <div className="mx-auto max-w-xs px-8">
+              <p className="text-base font-semibold text-gray-600">半年繳</p>
+              <p className="mt-6 flex items-baseline justify-center gap-x-2">
+                <span className="text-5xl font-bold tracking-tight text-gray-900">
+                  $500
+                </span>
+                <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">
+                  NTD
+                </span>
+              </p>
+              <link
+                href="/contact"
+                className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              />
+              聯繫我們
             </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
+
 
   )
 }
