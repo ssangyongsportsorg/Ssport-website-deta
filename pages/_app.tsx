@@ -1,4 +1,4 @@
-import '../styles/globals.css
+import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from './components/head'
 import Footer from './components/footer'
@@ -9,9 +9,6 @@ export default function App({
   Component,
   pageProps: { session, ...pageProps },
 }: AppProps) {
-   const router = useRouter();
-
-  // Integrate nprogress
   // 检查是否是 RestrictedPage，如果是，则不使用 app.tsx
   if (Component.name === 'support') {
     return (
@@ -26,7 +23,7 @@ export default function App({
   return (
     <div>
       
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
   <div
     className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
     aria-hidden="true"
@@ -39,14 +36,13 @@ export default function App({
       }}
     />
   
-  
         <SessionProvider session={session}>
           <Head />
           <Component {...pageProps} />
           <Footer />
         </SessionProvider>
     
-</div></div>
+    </div></div>
 
     </div>
   );
