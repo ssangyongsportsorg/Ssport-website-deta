@@ -1,4 +1,4 @@
-import '@/styles/globals.css
+import '../styles/globals.css
 import type { AppProps } from 'next/app'
 import Head from './components/head'
 import Footer from './components/footer'
@@ -46,7 +46,7 @@ export default function App({
           <Footer />
         </SessionProvider>
     
-</div>
+</div></div>
 
     </div>
   );
