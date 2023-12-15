@@ -17,8 +17,8 @@ export default function Post({frontmatter, content}) {
   </Head>     
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="pt-10 pb-16">
-      <div className="text-sm font-medium text-gray-500">Product</div>
-      <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+      <div className="text-sm font-medium text-gray-500">{tags}</div>
+      <h1 className={`mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl ${styles.abc}`}>
         {title}
       </h1>
       <p className="mt-4 max-w-2xl text-xl text-gray-500">
