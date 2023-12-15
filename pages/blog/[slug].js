@@ -10,70 +10,63 @@ import Head from 'next/head'
 export default function Post({frontmatter, content}) {
     const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
 
-    return <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 ">
-    <Head>
-        <title>{title}-雙龍體育blog</title>
-       <meta name="description" content={`{tittle}-雙龍體育blog`} />
-      </Head>     
- <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div className="pt-10 pb-16">
-    <div className="text-sm font-medium text-gray-500">Product</div>
-    <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-              {title}
-
-    </h1>
-    <p className="mt-4 max-w-2xl text-xl text-gray-500">
-             {seo}
-
-    </p>
-  </div>
-<address className="flex items-center mb-6 not-italic">
-          <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
-          
-            <Image
-  className="mr-4 w-16 h-16 rounded-full"
-  src={img}
-  alt={author}
-  width={64}
-  height={64}
-/>
-            <div>
-              <a
-                href="#"
-                rel="author"
-                className="text-xl font-bold text-gray-900 dark:text-white"
-              >
-                {author}
-              </a>
-              <p className="text-base font-light text-gray-500 dark:text-gray-400">
-                    {info}
-              </p>
-              <p className="text-base font-light text-gray-500 dark:text-gray-400">
-                <time
-                  pubdate=""
-                  dateTime="{date}"
-                  title="{date}"
-                >
-                  {date}
-                </time>
-              </p>
-            </div>
-          </div>
-        </address>      
+    return <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
+  <Head>
+    <title>{title}-雙龍體育blog</title>
+    <meta name="description" content={`${title}-雙龍體育blog`} />
+  </Head>     
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-10 pb-16">
+      <div className="text-sm font-medium text-gray-500">Product</div>
+      <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+        {title}
+      </h1>
+      <p className="mt-4 max-w-2xl text-xl text-gray-500">
+        {seo}
+      </p>
+    </div>
+    <address className="flex items-center mb-6 not-italic">
+      <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+        <Image
+          className="mr-4 w-16 h-16 rounded-full"
+          src={img}
+          alt={author}
+          width={64}
+          height={64}
+        />
+        <div>
+          <a
+            href="#"
+            rel="author"
+            className="text-xl font-bold text-gray-900 dark:text-white"
+          >
+            {author}
+          </a>
+          <p className="text-base font-light text-gray-500 dark:text-gray-400">
+            {info}
+          </p>
+          <p className="text-base font-light text-gray-500 dark:text-gray-400">
+            <time
+              pubdate=""
+              dateTime={date}
+              title={date}
+            >
+              {date}
+            </time>
+          </p>
+        </div>
+      </div>
+    </address>      
     <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
       <header className="mb-4 lg:mb-6 not-format">
         <div>
-          <div className="pt-8 pb-16 lg:pt-16 lg:pb-24 ">
-            <p>
-    <div dangerouslySetInnerHTML={{ __html: content }} />
-            </p>
+          <div className="pt-8 pb-16 lg:pt-16 lg:pb-24">
+            <p dangerouslySetInnerHTML={{ __html: content }} />
           </div>
         </div>
       </header>
     </article>
   </div>
-</div>
-
 </main>
 
 }
