@@ -24,33 +24,39 @@ export default function Post({frontmatter, content}) {
 
     </p>
   </div>
-  <div className="border-t border-blue-500 pt-10 pb-16">
-    <div className="flex items-center justify-between">
-      <div className="flex items-center">
-        <img
-          src={img}
-          alt={author}
-          className="h-10 w-10 rounded-full"
-          height={40}
-          style={{ aspectRatio: "40/40", objectFit: "cover" }}
-          width={40}
-        />
-        <div className="ml-3">
-          <p className="text-sm font-medium text-gray-900">Walker Chabott</p>
-          <div className="flex space-x-1 text-sm text-gray-500">
-            <time dateTime="{date}">{date}</time>
+<address className="flex items-center mb-6 not-italic">
+          <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+          
+            <Image
+  className="mr-4 w-16 h-16 rounded-full"
+  src={img}
+  alt={author}
+  width={64}
+  height={64}
+/>
+            <div>
+              <a
+                href="#"
+                rel="author"
+                className="text-xl font-bold text-gray-900 dark:text-white"
+              >
+                {author}
+              </a>
+              <p className="text-base font-light text-gray-500 dark:text-gray-400">
+                    {info}
+              </p>
+              <p className="text-base font-light text-gray-500 dark:text-gray-400">
+                <time
+                  pubdate=""
+                  dateTime="{date}"
+                  title="{date}"
+                >
+                  {date}
+                </time>
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="hidden md:block">
-        <p className="text-sm font-medium text-gray-900">
-          作者介紹
-        </p>
-        <p className="mt-1 text-sm text-gray-500">
-          {info}
-        </p>
-      </div>
-    </div>
+        </address>      
     <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
       <header className="mb-4 lg:mb-6 not-format">
         <div>
@@ -64,7 +70,10 @@ export default function Post({frontmatter, content}) {
     </article>
   </div>
 </div>
-
+<Head>
+        <title>{title}-雙龍體育blog</title>
+       <meta name="description" content={`{tittle}-雙龍體育blog`} />
+      </Head>
 </main>
 
 }
