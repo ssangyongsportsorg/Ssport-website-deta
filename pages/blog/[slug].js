@@ -16,40 +16,38 @@ export default function Post({frontmatter, content}) {
   <div className="pt-10 pb-16">
     <div className="text-sm font-medium text-gray-500">Product</div>
     <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-      Default setup now includes scheduled scans and supports all languages
-      covered by CodeQL
+              {title}
+
     </h1>
     <p className="mt-4 max-w-2xl text-xl text-gray-500">
-      We've added new improvements to default setup, including automatically
-      scheduling scans on repositories and support for all CodeQL covered
-      languages.
+             {seo}
+
     </p>
   </div>
   <div className="border-t border-blue-500 pt-10 pb-16">
     <div className="flex items-center justify-between">
       <div className="flex items-center">
         <img
-          alt="Author avatar"
+          src={img}
+          alt={author}
           className="h-10 w-10 rounded-full"
           height={40}
-          src="/placeholder.svg"
           style={{ aspectRatio: "40/40", objectFit: "cover" }}
           width={40}
         />
         <div className="ml-3">
           <p className="text-sm font-medium text-gray-900">Walker Chabott</p>
           <div className="flex space-x-1 text-sm text-gray-500">
-            <time dateTime="2023-12-13">December 13, 2023</time>
+            <time dateTime="{date}">{date}</time>
           </div>
         </div>
       </div>
       <div className="hidden md:block">
         <p className="text-sm font-medium text-gray-900">
-          The GitHub Insider Newsletter
+          作者介紹
         </p>
         <p className="mt-1 text-sm text-gray-500">
-          Discover tips, technical guides, and best practices in our monthly
-          newsletter for developers.
+          {info}
         </p>
       </div>
     </div>
