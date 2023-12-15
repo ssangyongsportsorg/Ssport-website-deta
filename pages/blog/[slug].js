@@ -28,8 +28,8 @@ export default function Post({frontmatter, content}) {
               alt="{author}"
               className="rounded-lg bg-black"
               height="700"
-              src="/{img}"
-              style={{
+  src={img}
+      style={{
                 aspectRatio: "900/700",
                 objectFit: "cover",
               }}
@@ -40,17 +40,7 @@ export default function Post({frontmatter, content}) {
         <div className="border-t border-blue-500 pt-10 pb-16">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-                    <img
-            alt="{title}"
-            className="w-full h-auto"
-            height="400"
-            src="/{bannerImage}"
-            style={{
-              aspectRatio: "1449/400",
-              objectFit: "cover",
-            }}
-            width="1449"
-          />
+                 
               <div className="ml-3">
                 <p className="text-sm font-medium text-gray-900">{author}</p>
                 <div className="flex space-x-1 text-sm text-gray-500">
