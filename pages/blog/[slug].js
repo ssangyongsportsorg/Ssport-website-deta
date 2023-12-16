@@ -70,7 +70,7 @@ export default function Post({frontmatter, content}) {
     </article>
   </div>
 </div>
-<div className="mt-[5rem] flex flex-col gap-6">
+<div className="flex flex-col gap-6">
       <div className="h-stack flex-wrap gap-2 text-base">
         <p className="text-lg text-black dark:text-white">標籤</p>
           <Link
@@ -88,7 +88,7 @@ export default function Post({frontmatter, content}) {
           target="_blank"
           rel="nofollow noreferrer"
         >
-          {author.image_url != null && (
+          
             <Image
               alt="avatar"
               src={img}
