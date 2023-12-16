@@ -73,14 +73,11 @@ export default function Post({frontmatter, content}) {
       <div className="h-stack flex-wrap gap-2 text-base">
         <p className="text-lg text-black dark:text-white">標籤</p>
           <Link
-        
             href="#"
-            className="bg-blue-100 px-2 py-1 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
-        
-          >
+            className="bg-blue-100 px-2 py-1 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400" >
             # {tag}
           </Link>
-        ))}
+    
       </div>
       
         <a
