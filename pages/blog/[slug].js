@@ -101,7 +101,6 @@ export default function Post({frontmatter, content}) {
             <p className="text-secondary text-lg">{info}</p>
           </div>
         </a>
-      ))}
       <div
         className={clsx(
           "flex flex-col gap-3 rounded-xl p-4",
