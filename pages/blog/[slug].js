@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/image';
 import fs from "fs";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it"; // import the markdown-it library
