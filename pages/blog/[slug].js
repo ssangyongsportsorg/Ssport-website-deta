@@ -96,7 +96,7 @@ export default function Post({frontmatter, content}) {
               height={60}
               className="rounded-full"
             />
-          )}
+        
           <div>
             <h2 className="text-2xl font-bold">{author}</h2>
             <p className="text-secondary text-lg">{info}</p>
