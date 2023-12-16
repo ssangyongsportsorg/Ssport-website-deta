@@ -70,66 +70,7 @@ export default function Post({frontmatter, content}) {
     </article>
   </div>
 </div>
-<div className="flex flex-col gap-6">
-      <div className="h-stack flex-wrap gap-2 text-base">
-        <p className="text-lg text-black dark:text-white">標籤</p>
-          <Link
-            href="#"
-            className="bg-blue-100 px-2 py-1 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400" >
-            # {tags}
-          </Link>
-    
-      </div>
-      
-        <a
-          
-          className="h-stack rounded-xl bg-zinc-100 p-4 dark:bg-zinc-900"
-          href="#"
-          target="_blank"
-          rel="nofollow noreferrer"
-        >
-          
-            <Image
-              alt="avatar"
-              src={img}
-              width={60}
-              height={60}
-              className="rounded-full"
-            />
-        
-          <div>
-            <h2 className="text-2xl font-bold">{author}</h2>
-            <p className="text-secondary text-lg">{info}</p>
-          </div>
-        </a>
-    <div className="flex flex-col gap-3 rounded-xl p-4">
-    <div className="bg-gradient-to-br from-pink-50/50 via-pink-100 to-cyan-200/50">
-    <div className="dark:from-cyan-800/20 dark:to-purple-400/50">
-    
-        <h2 className="font-extrabold">
-          <span className="text-2xl max-sm:text-blue-400 sm:text-3xl">
-            也想成為
-          </span>
-          <br className="sm:hidden" />
-          <span className="text-3xl">內容創作者?</span>
-        </h2>
-        <p className="text-lg font-semibold text-slate-700 dark:text-slate-300">
-          通過 Github 為我們貢獻
-        </p>
-        <a
-          href="https://github.com/ssangyongsportsorg/ssport-website"
-          target="_blank"
-          className="w-fit"
-          rel="noreferrer"
-        >
-          <button className="rounded-lg bg-blue-400 px-4 py-2 font-bold text-white">
-            加入我們
-          </button>
-        </a>
-         </div>
-               </div>
-      </div>
-    </div>
+
 </main>
 
 }
