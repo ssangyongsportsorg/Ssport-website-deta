@@ -16,46 +16,44 @@ export default function Post({frontmatter, content}) {
     <meta name="description" content={`${title}-雙龍體育blog`} />
   </Head>     
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="pt-10 pb-16">
-      <div className="text-sm font-medium text-gray-500">{tags}</div>
-      <h1 className={`mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl ${styles.abc}`}>
-        {title}
-      </h1>
-      <p className="mt-4 max-w-2xl text-xl text-gray-500">
-        {seo}
-      </p>
-    </div>
-    <address className="flex items-center mb-6 not-italic">
-      <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
-        <Image
-          className="mr-4 w-16 h-16 rounded-full"
+  <div className="pt-10 pb-16">
+    <div className="text-sm font-medium text-gray-500">Product</div>
+    <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+              {title}
+
+    </h1>
+    <p className="mt-4 max-w-2xl text-xl text-gray-500">
+             {seo}
+
+    </p>
+  </div>
+  <div className="border-t border-blue-500 pt-10 pb-16">
+    <div className="flex items-center justify-between">
+      <div className="flex items-center">
+        <img
           src={img}
           alt={author}
-          width={64}
-          height={64}
+          className="h-10 w-10 rounded-full"
+          height={40}
+          style={{ aspectRatio: "40/40", objectFit: "cover" }}
+          width={40}
         />
-        <div>
-          <a
-            href="#"
-            rel="author"
-            className="text-xl font-bold text-gray-900 dark:text-white"
-          >
-            {author}
-          </a>
-          <p className="text-base font-light text-gray-500 dark:text-gray-400">
-            {info}
-          </p>
-          <p className="text-base font-light text-gray-500 dark:text-gray-400">
-            <time
-              pubdate=""
-              dateTime={date}
-              title={date}
-            >
-              {date}
-            </time>
-          </p>
+        <div className="ml-3">
+          <p className="text-sm font-medium text-gray-900">{author}</p>
+          <div className="flex space-x-1 text-sm text-gray-500">
+            <time dateTime="{date}">{date}</time>
+          </div>
         </div>
       </div>
+      <div className="hidden md:block">
+        <p className="text-sm font-medium text-gray-900">
+          作者介紹
+        </p>
+        <p className="mt-1 text-sm text-gray-500">
+          {info}
+        </p>
+      </div>
+    </div>
     </address>      
     <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
       <header className="mb-4 lg:mb-6 not-format">
