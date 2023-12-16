@@ -101,13 +101,10 @@ export default function Post({frontmatter, content}) {
             <p className="text-secondary text-lg">{info}</p>
           </div>
         </a>
-      <div
-        className={clsx(
-          "flex flex-col gap-3 rounded-xl p-4",
-          "bg-gradient-to-br from-pink-50/50 via-pink-100 to-cyan-200/50",
-          "dark:from-cyan-800/20 dark:to-purple-400/50"
-        )}
-      >
+    <div className="flex flex-col gap-3 rounded-xl p-4">
+    <div className="bg-gradient-to-br from-pink-50/50 via-pink-100 to-cyan-200/50">
+    <div className="dark:from-cyan-800/20 dark:to-purple-400/50">
+    
         <h2 className="font-extrabold">
           <span className="text-2xl max-sm:text-blue-400 sm:text-3xl">
             也想成為
@@ -128,6 +125,8 @@ export default function Post({frontmatter, content}) {
             加入我們
           </button>
         </a>
+         </div>
+               </div>
       </div>
     </div>
 </main>
