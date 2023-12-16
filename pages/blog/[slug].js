@@ -98,7 +98,7 @@ export default function Post({frontmatter, content}) {
             />
           )}
           <div>
-            <h2 className="text-2xl font-bold">{autho}</h2>
+            <h2 className="text-2xl font-bold">{author}</h2>
             <p className="text-secondary text-lg">{info}</p>
           </div>
         </a>
