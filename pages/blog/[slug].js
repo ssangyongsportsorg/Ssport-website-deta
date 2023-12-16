@@ -15,7 +15,9 @@ export default function Post({frontmatter, content}) {
     <title>{title}-雙龍體育blog</title>
     <meta name="description" content={`${title}-雙龍體育blog`} />
   </Head>     
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        
+ <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div className="pt-10 pb-16">
     <div className="text-sm font-medium text-gray-500">Product</div>
     <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
@@ -54,17 +56,20 @@ export default function Post({frontmatter, content}) {
         </p>
       </div>
     </div>
-    </address>      
     <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
       <header className="mb-4 lg:mb-6 not-format">
         <div>
-          <div className="pt-8 pb-16 lg:pt-16 lg:pb-24">
-            <p dangerouslySetInnerHTML={{ __html: content }} />
+          <div className="pt-8 pb-16 lg:pt-16 lg:pb-24 ">
+            <p>
+    <div dangerouslySetInnerHTML={{ __html: content }} />
+            </p>
           </div>
         </div>
       </header>
     </article>
   </div>
+</div>
+
 </main>
 
 }
