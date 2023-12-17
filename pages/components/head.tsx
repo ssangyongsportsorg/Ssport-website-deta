@@ -1,31 +1,29 @@
-import { Navbar } from "flowbite-react";
 import { useState, useEffect } from 'react';
+import { Navbar } from "flowbite-react";
+import Login from "./login";
+import React from 'react';
 import Link from 'next/link';
 import { signIn, signOut, useSession } from "next-auth/react"
 import { Session } from "next-auth"
 import { DocSearch } from '@docsearch/react'
 import '@docsearch/css';
 
-export const NavbarContext = React.createContext();
-
 export default function Header() {
-  const [collapsed, setCollapsed] = useState(true);
-  
+  const [collapsed, setCollapsed] = useState(false);
+  const session = useSession();
   useEffect(() => {
-    const handleRouteChange = () => {
-      setCollapsed(true);
-    };
-
-    // 監聽路由變化，關閉Navbar
-    window.addEventListener('routeChangeStart', handleRouteChange);
-
+    window.addEventListener('resize', () => {
+      setCollapsed(window.innerWidth < 992);
+    });
     return () => {
-      window.removeEventListener('routeChangeStart', handleRouteChange);
-    };
+      window.removeEventListener('resize', () => {
+        setCollapsed(window.innerWidth < 992);
+      });
+    }
   }, []);
 
   return (
-    <NavbarContext.Provider value={collapsed}>
+    <>
       <header>
         <Navbar
           fluid={true}
@@ -47,40 +45,42 @@ export default function Header() {
               appId="70GEOCJCSX"
               indexName="help"
             />
-
             <Login />
-
-            <Navbar.Toggle onClick={() => setCollapsed(!collapsed)} />
+            <Navbar.Toggle />
           </div>
           <Navbar.Collapse>
+            <a
+              href="https://slb.ssangyongsports.org"
+              className="block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
+            >
+              SLB
+            </a>
+            <a href="https://sba.ssangyongsports.org" className="block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white">
+              SBA
+            </a>
             <Link href="/support" passHref={true} className="block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white">
               幫助中心
             </Link>
             <Link href="/p" passHref={true} className="block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white">
               隱私政策
             </Link>
-
             <Link href="/t" passHref={true} className="block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white">
               服務條款
             </Link>
-
             <Link href="/blog" passHref={true} className="block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white">
               部落格
             </Link>
             <Link href="/contact" passHref={true} className="block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white">
               聯繫
             </Link>
-    <a href="https://status.ssangyongsports.org" className="block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white">
-      狀態
-    </a>
-  </Navbar.Collapse>
- 
-</Navbar>
-      
+            <a href="https://status.ssangyongsports.org" className="block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white">
+              狀態
+            </a>
+          </Navbar.Collapse>
+        </Navbar>
       </header>
-       <br /> 
-    <br /> 
+      <br />
+      <br />
     </>
-
   )
 }
