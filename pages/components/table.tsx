@@ -22,7 +22,7 @@ function table() {
                     <span className={styles.abc}>職棒</span>
       </h2>
       <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
-       棒球，（英語：Baseball、日韓稱為野球），為一種團體球類運動，由人數最少為9人的两支队伍在一個扇形的球場进行攻擊與守備。棒球球員分為攻...
+          雙龍職籃是雙龍體育旗下的體育組織,總共有四支隊伍,第一屆尚未開打敬請期待
       </p>
       <a
         href="https://slb.ssangyongsports.org/"
