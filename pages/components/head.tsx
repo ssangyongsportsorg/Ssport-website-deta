@@ -24,7 +24,7 @@ const callsToAction = [
 ]
 
 
-export default function head() {
+export default function Head() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
