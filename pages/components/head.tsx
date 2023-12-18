@@ -1,4 +1,5 @@
 import { Fragment, useState } from 'react'
+import Link from 'next/link'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -99,9 +100,9 @@ export default function Head() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link href="/blog" className="text-sm font-semibold leading-6 text-gray-900">
             Features
-          </a>
+          </Link>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Marketplace
           </a>
