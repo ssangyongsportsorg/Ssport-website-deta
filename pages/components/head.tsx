@@ -22,10 +22,9 @@ const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ]
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+function classNames(...classes: any[]) {
+  return classes.filter(Boolean).join(' ');
 }
-
 export default function Head() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
