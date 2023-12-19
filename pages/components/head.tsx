@@ -37,10 +37,10 @@ export default function Head() {
     <header className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-          </a>
+          <Link href="/" className="-m-1.5 p-1.5">
+            <span className="sr-only">雙龍體育</span>
+            <img className="h-8 w-auto" src="/logo.png" alt="" />
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -48,7 +48,7 @@ export default function Head() {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             onClick={() => setMobileMenuOpen(true)}
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">打開菜單</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
@@ -104,15 +104,25 @@ export default function Head() {
             </Transition>
           </Popover>
 
-          <Link href="/blog" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+          <Link href="/support" className="text-sm font-semibold leading-6 text-gray-900">
+            幫助中心
           </Link>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
+           <Link href="/p" className="text-sm font-semibold leading-6 text-gray-900">
+            隱私政策
+          </Link>
+           <Link href="/t" className="text-sm font-semibold leading-6 text-gray-900">
+            服務條款
+          </Link>
+           <Link href="/blog" className="text-sm font-semibold leading-6 text-gray-900">
+            部落格
+          </Link>
+           <Link href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
+            聯繫
+          </Link>
+          <a href="https://status.ssangyongsports.eu.org" className="text-sm font-semibold leading-6 text-gray-900">
+            狀態
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
-          </a>
+          
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
