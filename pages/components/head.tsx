@@ -1,5 +1,9 @@
 import { Fragment, useState } from 'react'
 import Link from 'next/link'
+import { DocSearch } from '@docsearch/react'
+import a from './docsearch.module.css';
+import '@docsearch/css';
+
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
