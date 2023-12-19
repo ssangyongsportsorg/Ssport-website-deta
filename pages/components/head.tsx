@@ -17,15 +17,12 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: '雙龍職棒', description: '雙龍職棒官網', href: 'https://slb.ssangyongsports.eu.org/'},
+  { name: '雙龍職籃', description: '雙龍職籃官網', href: 'https://sba.ssangyongsports.eu.org/' },
 ]
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: '雙龍體育TV', href: '/tv', icon: PlayCircleIcon },
+  { name: '購物', href: '#'},
 ]
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ');
