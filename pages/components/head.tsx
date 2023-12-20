@@ -17,12 +17,12 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: '雙龍職棒', description: '雙龍職棒官網', href: 'https://slb.ssangyongsports.eu.org/'},
-  { name: '雙龍職籃', description: '雙龍職籃官網', href: 'https://sba.ssangyongsports.eu.org/' },
+  { name: '雙龍職棒', description: '雙龍職棒官網', href: 'https://slb.ssangyongsports.eu.org/' icon: PlayCircleIcon },
+  { name: '雙龍職籃', description: '雙龍職籃官網', href: 'https://sba.ssangyongsports.eu.org/' icon: PlayCircleIcon },
 ]
 const callsToAction = [
   { name: '雙龍體育TV', href: '/tv', icon: PlayCircleIcon },
-  { name: '購物', href: '#'},
+  { name: '購物', href: '#' icon: PlayCircleIcon },
 ]
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ');
@@ -122,6 +122,11 @@ export default function Head() {
           
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <DocSearch
+              apiKey="c2e792c2e75fe1dd3e40574f8b4c9a80"
+              appId="70GEOCJCSX"
+              indexName="help"
+            />
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
