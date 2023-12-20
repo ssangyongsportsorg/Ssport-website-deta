@@ -17,12 +17,12 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: '雙龍職棒', description: '雙龍職棒官網', href: 'https://slb.ssangyongsports.eu.org/' icon: ChartPieIcon },
-  { name: '雙龍職籃', description: '雙龍職籃官網', href: 'https://sba.ssangyongsports.eu.org/' icon: ChartPieIcon },
+  { name: '雙龍職棒', description: '雙龍職棒官網', href: 'https://slb.ssangyongsports.eu.org/', icon: ChartPieIcon },
+  { name: '雙龍職籃', description: '雙龍職籃官網', href: 'https://sba.ssangyongsports.eu.org/', icon: ChartPieIcon },
 ]
 const callsToAction = [
   { name: '雙龍體育TV', href: '/tv', icon: PlayCircleIcon },
-  { name: '購物', href: '#' icon: PhoneIcon },
+  { name: '購物', href: '#', icon: PhoneIcon },
 ]
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ');
