@@ -17,8 +17,8 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: '雙龍職棒', description: '雙龍職棒官網', href: 'https://slb.ssangyongsports.eu.org/' icon: PlayCircleIcon },
-  { name: '雙龍職籃', description: '雙龍職籃官網', href: 'https://sba.ssangyongsports.eu.org/' icon: PlayCircleIcon },
+  { name: '雙龍職棒', description: '雙龍職棒官網', href: 'https://slb.ssangyongsports.eu.org/' icon: CursorArrowRaysIcon },
+  { name: '雙龍職籃', description: '雙龍職籃官網', href: 'https://sba.ssangyongsports.eu.org/' icon: CursorArrowRaysIcon },
 ]
 const callsToAction = [
   { name: '雙龍體育TV', href: '/tv', icon: PlayCircleIcon },
