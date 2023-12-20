@@ -24,9 +24,7 @@ return (
 return (
 <>
 <button
-        className={clsx(
-          "break-keep rounded-md px-5 py-1 font-bold",
-          "bg-black text-white dark:bg-white dark:text-black"
+        className="break-keep rounded-md px-5 py-1 font-bold",
         )}
       >
   <Link
