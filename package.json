@@ -1,5 +1,5 @@
 {
-  "name": "ssport-home",
+  "name": "sba-home",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@docsearch/react": "^3.5.2",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
     "@types/mdx": "^2.0.10",
     "@types/node": "18.15.10",
     "@types/react": "18.0.29",

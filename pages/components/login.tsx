@@ -23,7 +23,9 @@ return (
 }
 return (
 <>
-<Button> 
+<button
+        className="break-keep rounded-md px-5 py-1 font-bold"
+      >
   <Link
                  href={`/api/auth/signin`} 
                  onClick={(e) => { 
@@ -32,7 +34,7 @@ return (
                  }} 
                > 
                  登入
-               </Link></Button>
+               </Link></button>
 </>
 )
 }
