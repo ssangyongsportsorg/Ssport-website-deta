@@ -24,8 +24,7 @@ return (
 return (
 <>
 <button
-        className="break-keep rounded-md px-5 py-1 font-bold",
-        )}
+        className="break-keep rounded-md px-5 py-1 font-bold"
       >
   <Link
                  href={`/api/auth/signin`} 
