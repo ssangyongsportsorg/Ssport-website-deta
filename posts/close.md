@@ -5,7 +5,7 @@ author: "雙龍體育"
 info: "雙龍體育團隊"
 img: "/team.jpeg"
 category: "公告"
-date: "2023-08-2"
+date: "2023-12-21"
 bannerImage: "/blog.jpg"
 tags:
     - 公告
