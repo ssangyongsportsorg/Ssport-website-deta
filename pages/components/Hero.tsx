@@ -6,14 +6,14 @@ function hero() {
  <section>
   <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
     <Link
-      href="/blog/status"
+      href="/blog/close"
       className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
     >
       <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">
         新
       </span>{" "}
       <span className="text-sm font-medium">
-        狀態頁無法使用
+        雙龍體育暫停服務至6月通知
       </span>
       <svg
         className="ml-2 w-5 h-5"
