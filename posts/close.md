@@ -2,7 +2,7 @@
 title: "雙龍體育暫停服務通知：我們的補償方案和未來展望"
 seo: "比賽將在2024 6月重新開打，We will come back soon"
 author: "雙龍體育"
-info: "雙龍體育團隊"
+info: "雙龍體育官方行政團隊"
 img: "/team.jpeg"
 category: "公告"
 date: "2023-12-21"
