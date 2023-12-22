@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function contact() {
   return (
 <div className="min-h-[50vh] border border-gray-200 bg-white/50 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur-lg">
