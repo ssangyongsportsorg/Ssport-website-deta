@@ -142,6 +142,7 @@ export default function Head() {
                 alt=""
               />
             </a>
+            <Login />
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
