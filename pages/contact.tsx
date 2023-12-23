@@ -21,7 +21,7 @@ function c() {
               method="POST"
     className="space-y-8"
             >
-        <input type="hidden" name="_next" value="https://ssangyongsports.org/thanks" />
+        <input type="hidden" name="_next" value="https://ssangyongsports.eu.org/thanks" />
           <input type="hidden" name="_subject" value="雙龍體育客戶聯繫" />
             <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_blacklist" value=" 幹, 靠 去死, 娘" />
