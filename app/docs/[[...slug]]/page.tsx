@@ -1,5 +1,7 @@
 import { getPage, getPageUrl, tree } from '@/app/source'
 import { allDocs } from 'contentlayer/generated'
+import Link from 'next/link'
+
 import type { Metadata } from 'next'
 import { MDXContent } from 'next-docs-ui/mdx'
 import { DocsPage } from 'next-docs-ui/page'
