@@ -1,5 +1,26 @@
-import Link from 'next/link'
-## 選擇類別
+---
+title: 選擇類別
+description: 選擇類別
+---
+export default () => {
+  return (
+<>
+    <div className="rounded-lg shadow-md p-6">
+  <div className="space-y-4">
+    <div className="flex justify-between items-center">
+<Link href="/docs/contact/form">
+<span className="text-lg">如何使用聯繫表聯繫我們</span>
+</Link>
+    </div>
+    <div className="flex justify-between items-center">
+<a href="/docs/contact/speed">
 
- <Link href="/docs/contact/form">如何使用聯繫表聯繫我們</Link> 
-        <Link href="/docs/contact/speed">我們何時回復幫助請求</Link>
+      <span className="text-lg">我們何時回復幫助請求</span>
+</a>
+
+    </div>
+  </div>
+</div>
+   </>
+  )
+}
