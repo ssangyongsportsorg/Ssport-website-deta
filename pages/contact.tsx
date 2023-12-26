@@ -1,4 +1,3 @@
-'use client';
 import { signIn, signOut, useSession } from "next-auth/react"
 import React from 'react';
 import Head from 'next/head'
