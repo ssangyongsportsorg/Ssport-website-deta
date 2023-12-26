@@ -9,7 +9,7 @@ function C() {
   const { mode } = router.query;
 
   // 將查詢參數的值與預設的主旨文字結合
-  const subject = mode ? `Interested in ${mode}` : '';
+  const subject = mode ? `${mode}` : '';
 
   return (
         <div>
