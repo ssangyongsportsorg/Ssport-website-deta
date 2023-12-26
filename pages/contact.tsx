@@ -4,7 +4,7 @@ import { Label, Select } from 'flowbite-react';
 import { FileInput } from 'flowbite-react';
 import { useRouter } from 'next/router';
 
-function c() {
+function C() {
   const router = useRouter();
   const { mode } = router.query;
 
@@ -126,4 +126,4 @@ function c() {
   )
 }
 
-export default c
+export default C
