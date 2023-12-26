@@ -128,5 +128,8 @@ if (session) {
       </Head>
   
       </div>
-)
+    );
+  } // <-- Add the closing curly brace here
+
+  // Rest of the component code...
 }
