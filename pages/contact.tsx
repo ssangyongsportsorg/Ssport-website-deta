@@ -6,7 +6,7 @@ import { Label, Select } from 'flowbite-react';
 import { FileInput } from 'flowbite-react';
 import { useRouter } from 'next/router';
 
-export default function   C() {
+export default function C() {
 
   const router = useRouter();
   const { mode } = router.query;
