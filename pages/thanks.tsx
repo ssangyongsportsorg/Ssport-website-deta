@@ -13,11 +13,13 @@ const p = () => {
 如果特殊假期（過年、端午節等國定假日）或假日可能會一個禮拜後回覆
 請不要一直重發聯繫，這只會延長回覆時間喔！</p>
   <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">如何在此工單新增問題呢？</h1>
-   <p>可以打開工單連結或直接回覆電子郵件</p>
+   <p>直接回覆電子郵件</p>
+
   <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">等了很久都沒回覆該如何？</h1>
    <p>可以查看原先的自動通知郵件中有一個連結點進去確認是否被關閉（被關閉原因可能是使用髒話或令客服人員不舒服的言語或垃圾消息）
 如果沒有被關閉請添加評論，我們就會回覆你啦！
-
+<h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">詳細說明</h1>
+   <p>可上我們的幫助中心聯繫類別查看</p>
 感謝🙏你的等待以及聯繫
 </p> 
   <Head>
