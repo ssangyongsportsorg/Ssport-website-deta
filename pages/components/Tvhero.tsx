@@ -13,7 +13,7 @@ function tvhero() {
             雙龍體育直播比賽，快速，安全 立刻購買！
           </p>
           <Link
-            href="/contact?mode=我想要購買雙龍體育TV會員"
+            href="/contact?mode=tv"
             className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
           >
             聯繫我們
