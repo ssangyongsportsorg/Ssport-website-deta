@@ -1,20 +1,16 @@
-import { signIn, signOut, useSession } from "next-auth/react"
-import React from 'react';
 import Head from 'next/head'
 import styles from './components/Button.module.css';
 import { Label, Select } from 'flowbite-react';
 import { FileInput } from 'flowbite-react';
 import { useRouter } from 'next/router';
 
-export default function C() {
-
+function C() {
   const router = useRouter();
   const { mode } = router.query;
 
   // 將查詢參數的值與預設的主旨文字結合
   const subject = mode ? `${mode}` : '';
-  const { data: session, status } = useSession();
-if (session) {
+
   return (
         <div>
    <section>
@@ -45,7 +41,6 @@ if (session) {
 <input
   type="name"
   name="email"
-  value={session.user.email}
   className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
   placeholder="peter@ssangyongsports.org"
   required={true}
@@ -128,8 +123,7 @@ if (session) {
       </Head>
   
       </div>
-    );
-  } // <-- Add the closing curly brace here
-
-  // Rest of the component code...
+  )
 }
+
+export default C
