@@ -1,23 +1,16 @@
 import Head from 'next/head'
-import { useState } from 'react';
 import styles from './components/Button.module.css';
 import { Label, Select } from 'flowbite-react';
 import { FileInput } from 'flowbite-react';
 import { useRouter } from 'next/router';
-function C() {
 
+function C() {
   const router = useRouter();
   const { mode } = router.query;
 
   // 將查詢參數的值與預設的主旨文字結合
-  const defaultSubject = mode ? `${mode}` : '';
+  const subject = mode ? `${mode}` : '';
 
-  // 使用狀態變量來追蹤主旨的值
-  const [subject, setSubject] = useState(defaultSubject);
-
-  const handleSubjectChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setSubject(event.target.value);
-  };
   return (
         <div>
    <section>
@@ -85,9 +78,8 @@ function C() {
         
         <input
           type="text"
-          name="subject"
+  name="_subject"
              value={subject}
-                    onChange={handleSubjectChange}
           required={true}
           className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
           placeholder="讓我們得知如何幫助你"
