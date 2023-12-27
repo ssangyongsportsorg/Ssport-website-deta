@@ -6,7 +6,7 @@ import { FileInput } from 'flowbite-react';
 import { useRouter } from 'next/router';
 function C() {
 
- const router = useRouter();
+  const router = useRouter();
   const { mode } = router.query;
 
   // 將查詢參數的值與預設的主旨文字結合
@@ -15,7 +15,7 @@ function C() {
   // 使用狀態變量來追蹤主旨的值
   const [subject, setSubject] = useState(defaultSubject);
 
-  const handleSubjectChange = (event) => {
+  const handleSubjectChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSubject(event.target.value);
   };
   return (
