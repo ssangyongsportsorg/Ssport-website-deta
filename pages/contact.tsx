@@ -9,8 +9,8 @@ function C() {
   const { mode } = router.query;
 
   let subjectDefaultValue = '';
-  if (mode === 'enterprise-v0') {
-    subjectDefaultValue = 'Interested in v0 Enterprise';
+  if (mode === 'tv') {
+    subjectDefaultValue = '我想要購買雙龍體育TV會員';
   }
 
   return (
@@ -54,24 +54,7 @@ function C() {
       className="max-w-md"
       id="select"
     >
-      <div className="mb-2 block">
-        <Label
-          htmlFor="幫助範圍"
-          value="幫助範圍"
-        />
-      </div>
-      <Select
-        name="help"
-        required
-      >
-      <option value="雙龍體育">雙龍體育</option>
-    <option value="雙龍職籃">雙龍職籃</option>
-    <option value="雙龍職棒">雙龍職棒</option>
-    <option value="雙龍體育TV">雙龍體育TV</option>
-    <option value="其他">其他</option>
-    <option value="系統網站問題回報">系統網站問題回報</option>
-      </Select>
-    </div>
+      
         <label
           htmlFor="subject"
           className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
