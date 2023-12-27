@@ -8,10 +8,11 @@ function C() {
   const router = useRouter();
   const { mode } = router.query;
 
-  let subjectDefaultValue = '';
-  if (mode === 'tv') {
-    subjectDefaultValue = '我想要購買雙龍體育TV會員';
-  }
+if (mode === 'tv') {
+  subjectDefaultValue = '我想要購買雙龍體育TV會員(不修改標題,提高回復速度)';
+} else if (mode === 'status') {
+  subjectDefaultValue = '報告事件狀態(不修改標題,提高回復速度)';
+}
 
   return (
     <div>
