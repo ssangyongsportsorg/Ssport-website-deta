@@ -61,17 +61,17 @@ function footer() {
             </Link>
           </li>
           <li className="mb-4">
-            <a href="https://help.ssangyongsports.org/" className="hover:underline">
+            <a href="https://ssangyongsports.org/chat" className="hover:underline">
             線上客服
             </a>
           </li>
           <li className="mb-4">
-            <a href="https://discuss.ssangyongsports.org/" className="hover:underline">
+            <a href="https://ssangyongsports.eu.org/blog/forum-close" className="hover:underline">
               論壇
             </a>
           </li>
           <li className="mb-4">
-            <Link href="contact" className="hover:underline" passHref={true}>
+            <Link href="/contact" className="hover:underline" passHref={true}>
               聯繫
             </Link>
           </li>
@@ -105,12 +105,12 @@ function footer() {
             </Link>
           </li>
           <li className="mb-4">
-            <a href="https://tv.ssangyongsports.org/buy.html" className="hover:underline">
+            <a href="https://ssangyongsports.eu.org/contact?mode=tv" className="hover:underline">
               註冊
             </a>
           </li>
           <li className="mb-4">
-            <a href="https://tv.ssangyongsports.org/login" className="hover:underline">
+            <a href="https://ssangyongsports.org/watch-tv" className="hover:underline">
              登入
             </a>
           </li>
@@ -122,12 +122,12 @@ function footer() {
         </h2>
         <ul className="text-gray-500 dark:text-gray-400">
           <li className="mb-4">
-            <a href="https://slb.ssangyongsports.org/" className="hover:underline">
+            <a href="https://slb.ssangyongsports.eu.org/" className="hover:underline">
               雙龍職棒
             </a>
           </li>
           <li className="mb-4">
-            <a href="https://sba.ssangyongsports.org/" className="hover:underline">
+            <a href="https://sba.ssangyongsports.eu.org/" className="hover:underline">
               雙龍職籃
             </a>
           </li>
