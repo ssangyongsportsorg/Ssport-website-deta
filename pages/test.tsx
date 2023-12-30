@@ -1,35 +1,27 @@
-// pages/admin/dashboard.js
-
 import { getSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 
-const DashboardPage = ({ user }) => {
+export default function Dashboard() {
   const router = useRouter();
 
-  // 在頁面載入時檢查權限
-  useEffect(() => {
-    if (!user || user.role !== 'admin') {
-      router.push('/unauthorized');
-    }
-  }, [user]);
+  // 檢查使用者角色
+  const checkUserRole = async () => {
+    const session = await getSession();
 
-  // 頁面內容
+    if (!session || session.user.role !== 'admin') {
+      // 若使用者不是 admin，導向其他頁面
+      router.push('/thanks');
+    }
+  };
+
+  // 在頁面載入時檢查使用者角色
+  useEffect(() => {
+    checkUserRole();
+  }, []);
+
   return (
     <div>
-      <h1>Admin Dashboard</h1>
-      {/* 其他內容 */}
+      sksk,s
     </div>
   );
-};
-
-export async function getServerSideProps(context) {
-  const session = await getSession(context);
-
-  return {
-    props: {
-      user: session?.user || null,
-    },
-  };
 }
-
-export default DashboardPage;
