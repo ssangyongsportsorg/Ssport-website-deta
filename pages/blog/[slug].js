@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/image';
+import { motion, useScroll } from "framer-motion"
 import fs from "fs";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it"; // import the markdown-it library
@@ -9,6 +10,7 @@ import styles from '../components/Button.module.css';
 import Head from 'next/head'
 // The page for each post
 export default function Post({frontmatter, content}) {
+      const { scrollYProgress } = useScroll();
     const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
 
     return <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
@@ -17,7 +19,8 @@ export default function Post({frontmatter, content}) {
     <meta name="description" content={`${title}-雙龍體育blog`} />
   </Head>     
 
-        
+            <motion.div style={{ scaleX: scrollYProgress }} />  
+
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div className="pt-10 pb-16">
     <div className="text-sm font-medium text-gray-500">{tags}</div>
