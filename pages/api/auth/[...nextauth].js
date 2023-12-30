@@ -11,28 +11,29 @@ export const authOptions = {
       clientSecret: process.env.GITHUB_SECRET,
     }),
     GoogleProvider({
-      clientId: process.env.Google_ID,
-      clientSecret: process.env.Google_SECRET,
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
       profile(profile) {
         return { role: profile.role ?? "user", ... }
+      }
     }),
     LineProvider({
-      clientId: process.env.Line_ID,
-      clientSecret: process.env.Line_SECRET,
+      clientId: process.env.LINE_ID,
+      clientSecret: process.env.LINE_SECRET,
     }),
     DiscordProvider({
-      clientId: process.env.Discord_ID,
-      clientSecret: process.env.Discord_SECRET,
+      clientId: process.env.DISCORD_ID,
+      clientSecret: process.env.DISCORD_SECRET,
     }),
   ],
- callbacks: {
+  callbacks: {
     jwt({ token, user }) {
-      if(user) token.role = user.role
-      return token
+      if(user) token.role = user.role;
+      return token;
     },
     session({ session, token }) {
-      session.user.role = token.role
-      return session
+      session.user.role = token.role;
+      return session;
     },
   },
 };
