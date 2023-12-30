@@ -13,6 +13,8 @@ export const authOptions = {
     GoogleProvider({
       clientId: process.env.Google_ID,
       clientSecret: process.env.Google_SECRET,
+      profile(profile) {
+        return { role: profile.role ?? "user", ... }
     }),
     LineProvider({
       clientId: process.env.Line_ID,
