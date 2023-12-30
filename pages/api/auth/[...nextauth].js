@@ -3,7 +3,6 @@ import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import LineProvider from "next-auth/providers/line";
 import DiscordProvider from "next-auth/providers/discord";
-
 export const authOptions = {
   providers: [
     GithubProvider({
@@ -14,7 +13,7 @@ export const authOptions = {
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_SECRET,
       profile(profile) {
-        return { role: profile.role ?? "user", ... }
+        return { role: profile.role ?? "user", ... };
       }
     }),
     LineProvider({
