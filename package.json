@@ -1,5 +1,5 @@
 {
-  "name": "sba-home",
+  "name": "ssport-home",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -21,6 +21,7 @@
     "eslint-config-next": "13.2.4",
     "flowbite": "^1.6.4",
     "flowbite-react": "^0.4.2",
+    "framer-motion": "^10.16.16",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
     "markdown-it-attrs": "^4.1.6",
