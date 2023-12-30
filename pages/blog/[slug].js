@@ -19,8 +19,10 @@ export default function Post({frontmatter, content}) {
     <meta name="description" content={`${title}-雙龍體育blog`} />
   </Head>     
 
-            <motion.div style={{ scaleX: scrollYProgress }} />  
-
+<motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div className="pt-10 pb-16">
     <div className="text-sm font-medium text-gray-500">{tags}</div>
