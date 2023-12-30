@@ -14,10 +14,6 @@ export default function Dashboard() {
     }
   };
 
-  // 在頁面載入時檢查使用者角色
-  useEffect(() => {
-    checkUserRole();
-  }, []);
 
   return (
     <div>
