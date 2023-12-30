@@ -38,7 +38,7 @@ export const authOptions = {
     },
     async signIn(user) {
       // 檢查使用者的電子郵件地址
-      if (user.email === 'didk@dod.com') {
+      if (user.email === '980321steven@gmail.com') {
         user.role = 'admin'; // 將使用者角色設置為 "admin"
       }
       return true;
