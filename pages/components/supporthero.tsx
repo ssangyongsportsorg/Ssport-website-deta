@@ -15,8 +15,8 @@ function supporthero() {
     </h2>
         <div className={`${a.docSearch} ${a.container}`}>
     <DocSearch
-              apiKey="c2e792c2e75fe1dd3e40574f8b4c9a80"
-              appId="70GEOCJCSX"
+              apiKey="f17332c3a1c0389e31da9845b6a6bdf1"
+              appId="YHQ31RR2WW"
               indexName="help"
             />
           </div>    
