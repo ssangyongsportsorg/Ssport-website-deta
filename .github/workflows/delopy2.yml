@@ -1,0 +1,28 @@
+name: docsearch抓取
+
+on: 
+  push:
+    branches:
+      - main
+    # Review gh actions docs if you want to further define triggers, paths, etc
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+
+jobs:
+  deploy:
+    name: docsearch抓取
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: docsearch抓取
+        env:
+          ALGOLIA_APP_ID: "YHQ31RR2WW"
+          ALGOLIA_API_KEY: "68282e7a8bdec7d472ef6a6d92432ab0"
+        run: |
+          docker run \
+          -e ALGOLIA_APP_ID -e ALGOLIA_API_KEY \
+          -e CONFIG="$(cat config2.json)" \
+          algolia/docsearch-scraper
