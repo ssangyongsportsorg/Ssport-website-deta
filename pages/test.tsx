@@ -1,6 +1,6 @@
 // pages/admin/dashboard.js
 
-import { getSession } from 'next-auth/client';
+import { getSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 
 const DashboardPage = ({ user }) => {
