@@ -1,19 +1,18 @@
-// pages/api/auth/[...nextauth].js
-
 import NextAuth from 'next-auth';
 import Providers from 'next-auth/providers';
-import GoogleProvider from "next-auth/providers/google"
+import GoogleProvider from "next-auth/providers/google";
+
 const options = {
   providers: [
-GoogleProvider({
+    GoogleProvider({
       clientId: process.env.Google_ID,
       clientSecret: process.env.Google_SECRET,
-    }),  
-    // 其他驗證提供者設
-    theme: {
-  logo: "/logo.png", // Absolute URL to image
-},
-
+    }),
+    // 其他驗證提供者設置
+  ],
+  theme: {
+    logo: "/logo.png", // Absolute URL to image
+  },
   callbacks: {
     async session(session, user) {
       session.user = user;
