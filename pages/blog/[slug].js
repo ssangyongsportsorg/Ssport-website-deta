@@ -16,15 +16,16 @@ export default function Post({frontmatter, content}) {
     const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
 
     return <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
+          <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
   <Head>
     <title>{title}-雙龍體育blog</title>
     <meta name="description" content={`${title}-雙龍體育blog`} />
   </Head>     
 
-<motion.div
-        className="progress-bar"
-        style={{ scaleX: scrollYProgress }}
-      />
+
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div className="pt-10 pb-16">
     <div className="text-sm font-medium text-gray-500">{tags}</div>
