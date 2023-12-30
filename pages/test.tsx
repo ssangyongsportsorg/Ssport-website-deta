@@ -1,23 +1,11 @@
-import { getSession } from 'next-auth/react';
-import { useRouter } from 'next/router';
+import { useSession } from "next-auth/react"
 
-export default function Dashboard() {
-  const router = useRouter();
+export default function Page() {
+  const session = await useSession()
 
-  // 檢查使用者角色
-  const checkUserRole = async () => {
-    const session = await getSession();
+  if (session?.user.role === "admin") {
+    return <p>You are an admin, welcome!</p>
+  }
 
-    if (!session || session.user.role !== 'admin') {
-      // 若使用者不是 admin，導向其他頁面
-      router.push('/thanks');
-    }
-  };
-
-
-  return (
-    <div>
-      sksk,s
-    </div>
-  );
+  return <p>You are not authorized to view this page!</p>
 }
