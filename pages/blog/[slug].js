@@ -14,16 +14,24 @@ import Head from 'next/head'
 export default function Post({frontmatter, content}) {
       const { scrollY } = useScroll()
 
-useMotionValueEvent(scrollY, "change", (latest) => {
-  console.log("Page scroll: ", latest)
-})
+useEffect(() => {
+  return scrollY.onChange((latest) => {
+    console.log("Page scroll: ", latest) // 會持續更新 console 滑動的位置
+  })
+}, [])
     const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
 
     return 
           
       
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
-        <motion.div style={{ scaleX: scrollYProgress }} />  
+        <MotinBox 
+      style={{ scaleX: scrollYProgress }} //根據頁面滑動進度改變 scaleX ， 0 -> 1
+      positon="fixed"
+      top="0"
+      left="0"
+      transformOrigin="0%" // 變更 transform 的軸點
+    />
   <Head>
     <title>{title}-雙龍體育blog</title>
     <meta name="description" content={`${title}-雙龍體育blog`} />
