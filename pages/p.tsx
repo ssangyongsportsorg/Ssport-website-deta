@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Scroll from '../components/scroll';
+import Scroll from './components/scroll';
 
 const p = () => {
   return (
