@@ -25,7 +25,7 @@ useEffect(() => {
           
       
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
-        <MotinBox 
+        <motion.div 
       style={{ scaleX: scrollYProgress }} //根據頁面滑動進度改變 scaleX ， 0 -> 1
       positon="fixed"
       top="0"
