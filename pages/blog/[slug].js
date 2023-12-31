@@ -1,32 +1,26 @@
 import Image from 'next/image';
 import Link from 'next/image';
-import { motion, useScroll } from "framer-motion"
 import fs from "fs";
+import Scroll from '../components/scroll';
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it"; // import the markdown-it library
 import md from "markdown-it"; // import the markdown-it library
 import path from "path";
 import styles from '../components/Button.module.css';
-import Scroll from '../components/scroll';
 import Head from 'next/head'
-
 // The page for each post
 export default function Post({frontmatter, content}) {
-
     const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
 
-    return 
-          
-      
-      <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
-       
+    return <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
   <Head>
     <title>{title}-雙龍體育blog</title>
     <meta name="description" content={`${title}-雙龍體育blog`} />
   </Head>     
-     <Scroll />
 
+        
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+       <Scroll />
   <div className="pt-10 pb-16">
     <div className="text-sm font-medium text-gray-500">{tags}</div>
     <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
