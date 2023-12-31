@@ -19,11 +19,11 @@ useMotionValueEvent(scrollY, "change", (latest) => {
 })
     const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
 
-    return <motion.div style={{ scaleX: scrollYProgress }} />
+    return 
           
       
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
-          
+        <motion.div style={{ scaleX: scrollYProgress }} />  
   <Head>
     <title>{title}-雙龍體育blog</title>
     <meta name="description" content={`${title}-雙龍體育blog`} />
