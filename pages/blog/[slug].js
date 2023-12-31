@@ -7,9 +7,8 @@ import MarkdownIt from "markdown-it"; // import the markdown-it library
 import md from "markdown-it"; // import the markdown-it library
 import path from "path";
 import styles from '../components/Button.module.css';
-import '../components/motion.css';
+import Scroll from '../components/scroll';
 
-import Head from 'next/head'
 // The page for each post
 export default function Post({frontmatter, content}) {
 
@@ -19,18 +18,12 @@ export default function Post({frontmatter, content}) {
           
       
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
-        <motion.div 
-      style={{ scaleX: scrollYProgress }} //根據頁面滑動進度改變 scaleX ， 0 -> 1
-      positon="fixed"
-      top="0"
-      left="0"
-      transformOrigin="0%" // 變更 transform 的軸點
-    />
+       
   <Head>
     <title>{title}-雙龍體育blog</title>
     <meta name="description" content={`${title}-雙龍體育blog`} />
   </Head>     
-
+     <Scroll />
 
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div className="pt-10 pb-16">
