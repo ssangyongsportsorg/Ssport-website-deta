@@ -12,13 +12,7 @@ import '../components/motion.css';
 import Head from 'next/head'
 // The page for each post
 export default function Post({frontmatter, content}) {
-      const { scrollY } = useScroll()
 
-useEffect(() => {
-  return scrollY.onChange((latest) => {
-    console.log("Page scroll: ", latest) // 會持續更新 console 滑動的位置
-  })
-}, [])
     const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
 
     return 
