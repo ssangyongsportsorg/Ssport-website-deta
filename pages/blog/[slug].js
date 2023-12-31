@@ -8,6 +8,7 @@ import md from "markdown-it"; // import the markdown-it library
 import path from "path";
 import styles from '../components/Button.module.css';
 import Scroll from '../components/scroll';
+import Head from 'next/head'
 
 // The page for each post
 export default function Post({frontmatter, content}) {
