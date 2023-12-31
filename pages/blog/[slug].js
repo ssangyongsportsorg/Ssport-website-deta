@@ -12,14 +12,18 @@ import '../components/motion.css';
 import Head from 'next/head'
 // The page for each post
 export default function Post({frontmatter, content}) {
-      const { scrollYProgress } = useScroll();
+      const { scrollY } = useScroll()
+
+useMotionValueEvent(scrollY, "change", (latest) => {
+  console.log("Page scroll: ", latest)
+})
     const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
 
-    return <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
-          <motion.div
-        className="progress-bar"
-        style={{ scaleX: scrollYProgress }}
-      />
+    return <motion.div style={{ scaleX: scrollYProgress }} />
+          
+      
+      <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
+          
   <Head>
     <title>{title}-雙龍體育blog</title>
     <meta name="description" content={`${title}-雙龍體育blog`} />
