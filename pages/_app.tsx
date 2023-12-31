@@ -9,6 +9,13 @@ export default function App({
   Component,
   pageProps: { session, ...pageProps },
 }: AppProps) {
+        const { scrollY } = useScroll()
+
+useEffect(() => {
+  return scrollY.onChange((latest) => {
+    console.log("Page scroll: ", latest) // 會持續更新 console 滑動的位置
+  })
+}, [])
   // 检查是否是 RestrictedPage，如果是，则不使用 app.tsx
   if (Component.name === 'support') {
     return (
