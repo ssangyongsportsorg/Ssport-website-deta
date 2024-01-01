@@ -2,7 +2,7 @@ import styles from './Button.module.css';
 function sport() {
 return (
   <>
-<section className="bg-gray-50 dark:bg-gray-800 border-t border-b border-gray-100 dark:border-gray-700">
+<section className="bg-gradient-to-r from-[#4f5bd5] via-[#9b4fd1] to-[#d14f8f]">
   <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16">
      <h2 className={`mb-6 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 lg:text-center dark:text-white md:text-4xl `}>
       我們的旗下
