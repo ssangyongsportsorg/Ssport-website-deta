@@ -153,7 +153,7 @@ function footer() {
 />
 </Link>
       <span className="block text-sm text-center text-gray-500 dark:text-gray-400">
-      Copyright © 2023 
+      Copyright © 2024 
         <a href="#" className="hover:underline">
           雙龍體育,
         </a>
