@@ -1,14 +1,15 @@
+import { motion } from "framer-motion";
 import styles from './Button.module.css';
 function sport() {
 return (
   <>
-<section className="bg-gradient-to-r from-[#4f5bd5] via-[#9b4fd1] to-[#d14f8f]">
+<section className="bg-gray-50 dark:bg-gray-800 border-t border-b border-gray-100 dark:border-gray-700">
   <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16">
-     <h2 className={`mb-6 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 lg:text-center dark:text-white md:text-4xl `}>
+     <motion.h2 className={`mb-6 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 lg:text-center dark:text-white md:text-4xl `}>
       我們的旗下
                    <span className={styles.abc}>運動</span>
 
-    </h2>
+     </motion.h2>
   
     <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mt-12">
       <a
