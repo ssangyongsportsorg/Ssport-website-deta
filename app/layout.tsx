@@ -6,7 +6,7 @@ import 'next-docs-ui/style.css'
 import '@/styles/globals.css'
 import Footer from '@/pages/components/footer'
 
-export default function RootLayout({ children }) {
+export default function Layout({ children }: { children: ReactNode }) {
   const CrispWithNoSSR = dynamic(
     () => import('./components/crisp')
   )
