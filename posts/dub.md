@@ -1,16 +1,15 @@
 ---
 title: "如何使用 dub.sh 創建簡短的網址"
-seo: "使用dub"
+seo: "使用dub創建短網址"
 author: "Peter yang"
 info: "雙龍體育CEO"
 img: "/1D7F9E91-14B0-4914-9FBD-0E46CE340A78.png"
 category: "blog"
-date: "2023-01-7"
+date: "2024-01-7"
 bannerImage: "/blog.jpg"
 tags:
     - blog
 ---
-#  [.text-3xl .font-extrabold .leading-tight .text-gray-900 .lg:mb-6 .lg:text-4xl .dark:text-white]
 如果你經常需要在網上分享一些長長的網址，你可能會覺得很麻煩，因為它們不方便複製、傳送或記憶。有沒有一種方法可以把這些網址變得更簡潔、更美觀呢？答案是有的，那就是使用連結縮短器。連結縮短器是一種服務，它可以把一個長網址轉換成一個短網址，並且保持原網址的功能。這樣，你就可以更容易地分享你的網址，而且還可以獲得一些額外的好處，比如統計網址的點擊數、設置網址的有效期限、生成二維碼等等。
 ![dub](https://github.com/dubinc/dub/assets/28986134/8f70a87f-4f13-426a-9785-a47f77433edd)
 在這篇文章中，我要介紹一個開源的連結縮短器，它叫做 dub.sh。dub.sh 是一個基於 Vercel Edge Functions 和 Upstash Redis 構建的連結縮短器，它具有以下的特點
