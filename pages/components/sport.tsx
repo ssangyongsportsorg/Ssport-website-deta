@@ -13,7 +13,7 @@ return (
   
     <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mt-12">
       <a
-        href="https://slb.ssangyongsports.org/"
+        href="https://slb.ssangyongsports.eu.org/"
         className="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
       >
         <span
@@ -45,7 +45,7 @@ return (
         </h3>
       </a>
       <a
-        href="https://sba.ssangyongsports.org/"
+        href="https://sba.ssangyongsports.eu.org/"
         className="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
       >
         <span
@@ -77,7 +77,7 @@ return (
         </h3>
       </a>
       <a
-        href="https://soccer.ssangyongsports.org"
+        href="/"
         className="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
       >
         <span
@@ -108,7 +108,7 @@ return (
           雙龍足球
         </h3>
       </a>
-      <a href="https://ssangyongsports.org/tv"
+      <a href="https://ssangyongsports.eu.org/tv"
         className="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
       >
         <span
