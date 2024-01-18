@@ -11,7 +11,7 @@ const p = () => {
         <header className="mb-4 lg:mb-6 not-format">        
   <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">隱私政策</h1>
   <p>
-    您的隱私對我們很重要。雙龍體育的政策是尊重您的隱私並遵守有關我們可能收集的關於您的任何個人信息的任何適用法律和法規，包括我們的網站ssangyongsports.org
+    您的隱私對我們很重要。雙龍體育的政策是尊重您的隱私並遵守有關我們可能收集的關於您的任何個人信息的任何適用法律和法規，包括我們的網站ssangyongsports.eu.org
     以及我們擁有和運營的其他網站。
   </p>
   <p>本政策自 2022 年 1 月 5 日起生效，最後更新時間為 2022 年 1 月 5 日。</p>
@@ -121,7 +121,7 @@ const p = () => {
   <p>
     <br />
   </p>
-  <p>support@ssangyongsport.org 雙龍體育團隊</p>
+  <p>雙龍體育團隊:support@ssangyongsport.eu.org </p>
 <Head>
         <title>隱私政策-雙龍體育</title>
         <meta name="description" content="雙龍體育的政策是尊重您的隱私並遵守有關我們可能收集的關於您的任何個人信息的任何適用法律和法規，包括我們的網站ssangyongsports.org 以及我們擁有和." />
