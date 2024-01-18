@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { motion } from "framer-motion";
 import styles from './Button.module.css';
 function sport() {
@@ -76,7 +77,7 @@ return (
           雙龍足球
         </h3>
       </a>
-      <a
+      <Link
         href="/"
         className="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
       >
@@ -107,8 +108,8 @@ return (
         <h3 className="font-semibold text-xl text-gray-900 dark:text-white mt-3.5">
           雙龍足球
         </h3>
-      </a>
-      <a href="https://ssangyongsports.eu.org/tv"
+      </Link>
+      <Link href="/tv"
         className="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
       >
         <span
@@ -138,7 +139,7 @@ return (
         <h3 className="font-semibold text-xl text-gray-900 dark:text-white mt-3.5">
           雙龍體育tv
         </h3>
-      </a>
+      </Link>
     </div>
   </div>
 </section>
