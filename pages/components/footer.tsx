@@ -181,7 +181,7 @@ function footer() {
         </li>        
         <li>
           <a
-            href="https://twitter.com/ssangyongsport"
+            href="https://twitter.com/ssport_org"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
           >
             <svg
