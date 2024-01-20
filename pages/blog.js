@@ -40,7 +40,8 @@ export default function Blog({posts}){
             const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
 
             //JSX for individual blog listing
-            return <article className="flex max-w-xl flex-col items-start justify-between" key={title}>
+            return <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <article className="flex max-w-xl flex-col items-start justify-between" key={title}>
   <div className="flex items-center gap-x-4 text-xs">
     <time dateTime="{date}" className="text-gray-500">
       {date}
@@ -80,7 +81,7 @@ export default function Blog({posts}){
     </div>
   </div>
 </article>
-
+ </div>
 
         })}
 </main>
