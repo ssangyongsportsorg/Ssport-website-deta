@@ -15,10 +15,10 @@ export default function Blog({posts}){
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto max-w-2xl lg:mx-0">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        From the blog
+        雙龍體育部落格
       </h2>
       <p className="mt-2 text-lg leading-8 text-gray-600">
-        Learn how to grow your business with our expert advice.
+        這裡找到最新公告、部落格文章
       </p>
     </div>
   </div>
@@ -41,7 +41,7 @@ export default function Blog({posts}){
 
             //JSX for individual blog listing
             return <article key={title}>
-            
+            <div className="bg-white py-24 sm:py-32">
          <div className="flex justify-between px-4 mx-auto max-w-8xl">
   <div className="hidden mb-6 xl:block lg:w-80">
     <div className="sticky top-36">
@@ -97,7 +97,7 @@ export default function Blog({posts}){
     </div>
   </div>
 </div>
-
+</div>
 </article>
 
         })}
