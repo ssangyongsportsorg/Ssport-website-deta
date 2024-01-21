@@ -40,8 +40,8 @@ export default function Blog({posts}){
             const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
 
             //JSX for individual blog listing
-            return <article key={title}>
-            <div className="bg-white py-24 sm:py-32">
+            return <article className="bg-white dark:bg-gray-900" key={title}>
+        
          <div className="flex justify-between px-4 mx-auto max-w-8xl">
   <div className="hidden mb-6 xl:block lg:w-80">
     <div className="sticky top-36">
@@ -95,7 +95,7 @@ export default function Blog({posts}){
         </div>
       </article>
     </div>
-  </div>
+                        
 </div>
 </div>
 </article>
