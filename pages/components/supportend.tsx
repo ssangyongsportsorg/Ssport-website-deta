@@ -12,7 +12,7 @@ function supportend() {
       </h2>
       <div className="space-y-2 sm:grid sm:grid-cols-2 lg:grid-cols-2 sm:gap-2 xl:gap-8 sm:space-y-0 md:mt-12">
         <Link
-          href="https://ssangyongsports.eu.org/c"
+          href="https://ssangyongsports.eu.org/contact"
           className="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
         >
           <span
@@ -34,7 +34,7 @@ function supportend() {
             <img
               alt=""
               className="service-icon"
-              src="https://th.bing.com/th/id/OIG.C96gOk0chUn1kKHxKOg3?w=173&h=173&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"
+              src="https://cdn-icons-png.flaticon.com/256/5300/5300598.png"
               width={75}
             />
             <noscript />
@@ -44,7 +44,7 @@ function supportend() {
           </h3>
         </Link>
         <Link
-          href="/chat"
+          href="/docs/livechat"
           className="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
         >
           <span
@@ -66,7 +66,7 @@ function supportend() {
             <img
               alt=""
               className="service-icon"
-              src="https://th.bing.com/th/id/OIG.cyGRgj1FvZpQO.xkVoOi?w=173&h=173&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"
+              src="https://cdn-icons-png.flaticon.com/512/9165/9165147.png"
               width={75}
             />
           </span>
