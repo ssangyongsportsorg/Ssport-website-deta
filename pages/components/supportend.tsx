@@ -44,7 +44,7 @@ function supportend() {
           </h3>
         </Link>
         <Link
-          href="/docs/livechat"
+          href="/docs/contact/LiveChat"
           className="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
         >
           <span
