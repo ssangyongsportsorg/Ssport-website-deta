@@ -26,8 +26,8 @@ const Home = () => {
           <div className="mx-auto max-w-2xl py-16 sm:py-2 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                購物網站上市了！.{' '}
-                <a href="#" className="font-semibold text-indigo-600">
+                目前不提供購票！.{' '}
+                <a href="https://ssangyongsports.eu.org/blog/close" className="font-semibold text-indigo-600">
                   <span className="absolute inset-0" aria-hidden="true" />
                   Read more <span aria-hidden="true">→</span>
                 </a>
@@ -76,12 +76,12 @@ const Home = () => {
             <h3 className="text-sm text-gray-700">
               <a href="#">
                 <span aria-hidden="true" className="absolute inset-0" />
-                Basic Tee
+                雙龍體育TV
               </a>
             </h3>
-            <p className="mt-1 text-sm text-gray-500">Black</p>
+            <p className="mt-1 text-sm text-gray-500">半年繳</p>
           </div>
-          <p className="text-sm font-medium text-gray-900">$35</p>
+          <p className="text-sm font-medium text-gray-900">$500</p>
         </div>
       </div>
       {/* More products... */}
