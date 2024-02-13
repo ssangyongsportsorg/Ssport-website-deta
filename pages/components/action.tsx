@@ -9,7 +9,7 @@ import Link from "next/link"
 
 export default function Component() {
   return (
-    <section className="w-full h-screen py-12 md:py-24 lg:py-32 xl:py-48 bg-black">
+    <section className="w-full h-screen py-6 md:py-12 lg:py-20 xl:py-24 bg-black">
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 items-center">
           <div className="flex flex-col justify-center space-y-4 text-center">
