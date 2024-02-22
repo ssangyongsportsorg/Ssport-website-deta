@@ -1,5 +1,5 @@
 import Hero from './components/Hero';
-import C from './components/C';
+import Game from './components/game0';
 import Table from './components/table';
 import Tabl from './components/tabl';
 import Sport from './components/sport';
