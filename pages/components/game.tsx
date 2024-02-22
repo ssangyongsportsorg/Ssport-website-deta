@@ -1,7 +1,7 @@
  import Link from 'next/link';
 import styles from './Button.module.css';
 import a from './a.module.css';
-function c() {
+function game() {
   return ( 
 <section className="bg-white dark:bg-gray-900 antialiased">
   <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
@@ -63,4 +63,4 @@ function c() {
  )
 }
 
-export default c;
+export default game;
