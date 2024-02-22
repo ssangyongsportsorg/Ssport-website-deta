@@ -1,4 +1,5 @@
 import Hero from './components/Hero';
+import C from './components/C';
 import Table from './components/table';
 import Tabl from './components/tabl';
 import Sport from './components/sport';
@@ -21,6 +22,7 @@ const Home = () => {
         <div id="anchor_one" />
         <Table />
         <Tabl />
+<C />
         <Action />
       </div>
     </>
