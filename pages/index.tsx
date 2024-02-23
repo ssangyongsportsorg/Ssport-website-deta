@@ -22,7 +22,7 @@ const Home = () => {
         <div id="anchor_one" />
         <Table />
         <Tabl />
-<C />
+<Game />
         <Action />
       </div>
     </>
