@@ -1,5 +1,5 @@
 import Hero from './components/Hero';
-import Game from './components/game0';
+import Game from './components/game';
 import Table from './components/table';
 import Tabl from './components/tabl';
 import Sport from './components/sport';
