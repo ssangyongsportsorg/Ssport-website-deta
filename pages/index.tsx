@@ -23,7 +23,7 @@ const Home = () => {
         <Table />
         <Tabl />
 <Game />
-        <Action />
+        
       </div>
     </>
   );
