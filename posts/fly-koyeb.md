@@ -23,8 +23,8 @@ Koyeb是一個無伺服器平台，提供全球最快的方式來部署全棧應
 - -**開發者導向**：減少了部署時間和操作複雜性，無需為業務和開發者管理服務器和基礎設施。
 
 ### Koyeb的缺點： [.text-3xl .font-extrabold .leading-tight .text-gray-900 .lg:mb-6 .lg:text-4xl .dark:text-white]
-- **學習曲線**：實施最佳實踐有一定的學習曲線。
-- **地理限制**：新推出的Eco Instances目前僅限於法蘭克福和華盛頓特區的位置。
+- -**學習曲線**：實施最佳實踐有一定的學習曲線。
+- -**位置限制**：新推出的Eco Instances目前僅限於法蘭克福和華盛頓特區的位置。
 
 ## Fly.io：專注於開發者體驗 [.text-3xl .font-extrabold .leading-tight .text-gray-900 .lg:mb-6 .lg:text-4xl .dark:text-white]
 
@@ -36,8 +36,8 @@ Fly.io是一個全功能的雲平台，專注於提供優秀的開發者體驗�
 
 ### Fly.io的缺點： [.text-3xl .font-extrabold .leading-tight .text-gray-900 .lg:mb-6 .lg:text-4xl .dark:text-white]
 - -**記憶體/ CPU限制**：與Nomad v1平台相比，機器目前的記憶體/CPU限制較低。
-- -
-**穩定性問題**：過去有穩定性問題，但現在似乎已經改善。
+
+- -**穩定性問題**：過去有穩定性問題，但現在似乎已經改善。
 
 ## 結論 [.text-3xl .font-extrabold .leading-tight .text-gray-900 .lg:mb-6 .lg:text-4xl .dark:text-white]
 
