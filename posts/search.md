@@ -36,4 +36,4 @@ Algolia 是一個專業的搜尋引擎服務，採用 C++ 語言編寫，旨在�
 + ⚫Meilisearch 和 Algolia 都支援錯字容錯，排序規則，同義詞，停用詞，自動語言偵測等功能，但 Algolia 還支援地理位置搜尋，而 Meilisearch 則不支援。這意味著 Algolia 可以讓使用者更精準地搜尋和過濾地理相關的數據，而 Meilisearch 則不行。支援地理位置搜尋的優點是可以提高準確性和相關性，缺點是可能增加複雜度和成本。不支援地理位置搜尋的優點是可以簡化流程和節省資源，缺點是可能降低準確性和相關性。
 + ⚫Meilisearch 和 Algolia 都支援 REST API 和多種程式語言的客戶端，但 Algolia 還提供了 Instantsearch，Autocomplete，Docsearch 等 UI 元件和整合方案，而 Meilisearch 則沒有。這意味著 Algolia 可以讓使用者更容易地建立和優化搜尋介面和體驗，而 Meilisearch 則不行。提供 UI 元件和整合方案的優點是可以提高易用性和美觀性，缺點是可能限制使用者的自主性和創新性。不提供 UI 元件和整合方案的優點是可以提高自主性和創新性，缺點是可能降低易用性和美觀性。
 ## 結論 [.text-3xl .font-extrabold .leading-tight .text-gray-900 .lg:mb-6 .lg:text-4xl .dark:text-white]
-綜上所述，Meilisearch 和 Algolia 都是優秀的搜尋引擎，但它們適合不同的場景和需求。如果您需要一個開源，輕量級，可自訂的搜尋引擎，並且不介意自行部署和管理，那麼 Meilisearch 可能
+綜上所述，Meilisearch 和 Algolia 都是優秀的搜尋引擎，但它們適合不同的場景和需求。如果您需要一個開源，輕量級，可自訂的搜尋引擎，並且不介意自行部署和管理，那麼 Meilisearch 可能是更好的選擇。
