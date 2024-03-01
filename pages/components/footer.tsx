@@ -66,7 +66,7 @@ function footer() {
             </a>
           </li>
           <li className="mb-4">
-            <a href="https://ssangyongsports.eu.org/blog/forum-close" className="hover:underline">
+            <a href="https://discuss.ssangyongsports.eu.org/d/1" className="hover:underline">
               論壇
             </a>
           </li>
