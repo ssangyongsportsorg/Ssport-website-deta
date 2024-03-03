@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import { Alert } from 'flowbite-react';
 import Head from 'next/head'
 const p = () => {
   return (
@@ -7,6 +9,31 @@ const p = () => {
     <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
         <header className="mb-4 lg:mb-6 not-format">        
   <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">感謝你聯繫雙龍體育</h1>
+            <Alert color="info">
+      <span className="font-medium">
+<script
+        dangerouslySetInnerHTML={{
+          __html: `
+            function updateFooterBadge(status) {
+              const badge = document.getElementById('footer-badge');
+              badge.textContent = status === 'UP' ? '依照狀態頁消息，我們團隊可正常收到你的聯繫' : '不好意思，我們團隊可能無法正常收到你的消息，因為狀態頁出現錯誤';
+              badge.className = status.toLowerCase();
+            }
+
+            fetch('https://status.ssangyongsports.eu.org/summary.json')
+              .then(response => response.json())
+              .then(data => {
+                const status = data.page.status;
+                updateFooterBadge(status);
+                badge.href = data.page.url;
+              })
+              .catch(error => {
+                console.error('無法讀取系統狀態', error);
+              });
+          `,
+        }}
+      ></script></span>
+    </Alert>
    <p>你被跳轉至此頁面代表我們以收到你的聯繫嘍！</p>
      <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">何時回覆？</h1>
    <p>我們團隊會在一個禮拜內回覆你
@@ -16,10 +43,9 @@ const p = () => {
    <p>直接回覆電子郵件</p>
 
   <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">等了很久都沒回覆該如何？</h1>
-   <p>可以查看原先的自動通知郵件中有一個連結點進去確認是否被關閉（被關閉原因可能是使用髒話或令客服人員不舒服的言語或垃圾消息）
-如果沒有被關閉請添加評論，我們就會回覆你啦！
+   <p>請在此寄送郵件，有可能是你的郵件不小心被略過了或者是你違反了我們的回覆規定：<Link href="/docs/contact/nreply">詳細說明</Link>
 <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">詳細說明</h1>
-   <p>可上我們的幫助中心聯繫類別查看</p>
+   <p>可上我們的幫助中心聯繫類別查看</p><Link href="/docs/contact/">聯繫類別</Link>
 感謝🙏你的等待以及聯繫
 </p> 
   <Head>
