@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Alert } from 'flowbite-react';
 import Head from 'next/head'
+import Script from 'next/script';
 const p = () => {
   return (
 
@@ -9,9 +10,8 @@ const p = () => {
     <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
         <header className="mb-4 lg:mb-6 not-format">        
   <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">感謝你聯繫雙龍體育</h1>
-            <Alert color="info">
-      <span className="font-medium">
-<script
+        <Alert color="success" onDismiss={() => alert('Alert dismissed!')}>
+      <span className="font-medium">消息通知</span> <script
         dangerouslySetInnerHTML={{
           __html: `
             function updateFooterBadge(status) {
@@ -32,8 +32,8 @@ const p = () => {
               });
           `,
         }}
-      ></script></span>
-    </Alert>
+      ></script>
+    </Alert>           
    <p>你被跳轉至此頁面代表我們以收到你的聯繫嘍！</p>
      <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">何時回覆？</h1>
    <p>我們團隊會在一個禮拜內回覆你
