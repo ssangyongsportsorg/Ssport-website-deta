@@ -1,7 +1,7 @@
 ---
 title: "Redis宣布不再開源:數據庫巨變引發業界震動
 "
-seo: "未來將會推出BSD"
+seo: "3/21這天Redis宣布不再開源！"
 author: "Peter yang"
 info: "雙龍體育CEO"
 img: "/1D7F9E91-14B0-4914-9FBD-0E46CE340A78.png"
