@@ -14,6 +14,13 @@ function C() {
   }
    if (mode === 'status') {
     subjectDefaultValue = '報告錯誤(不要更改此處,有助於加速回復)';
+  },
+let input = '';
+  if (mode === 'tv') {
+    subjectDefaultValue = '我想要購買雙龍體育TV會員(不要更改此處,有助於加速回復)';
+  }
+   if (mode === 'status') {
+    subjectDefaultValue = '你好👋，我發現__服務出現__，錯誤大概';
   }
 
   return (
@@ -98,6 +105,7 @@ function C() {
           name="message"
           rows={6}
           required={true}
+         defaultValue={input} // 在此處設置預設值
           className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
           placeholder="Leave a comment..."
           defaultValue={""}
