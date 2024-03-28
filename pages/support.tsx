@@ -1,6 +1,6 @@
 import Supportchoice from './components/supportchoice';
 import Supporthero from './components/supporthero';
-import Supportend from './components/supportend';
+import C123 from './components/c123';
 import styles from './components/docsearch.module.css';
 import Ticket from './components/ticket';
 import Head from 'next/head'
@@ -17,7 +17,7 @@ const support = () => {
       <div>
         <Supporthero />
         <Supportchoice />
-       <Supportend />             
+       <C123 />             
       </div>
     </>
       );
