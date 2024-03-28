@@ -14,8 +14,7 @@ function C() {
   }
    if (mode === 'status') {
     subjectDefaultValue = '報告錯誤(不要更改此處,有助於加速回復)';
-  },
-
+  }
   return (
         <div>
    <section>
