@@ -1,33 +1,137 @@
 import Link from 'next/link';
 export default function Custom404() {
-  return <section className="bg-white dark:bg-gray-900">
-  <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-    <div className="mx-auto max-w-screen-sm text-center">
-      <img
-  className="h-auto max-w-xl rounded-lg shadow-xl dark:shadow-gray-800"
-  src="/404.png.png"
-  alt="image description"
-/>
+  return Editor with AI
 
-    <h1 className="underline mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500">
-        404錯誤
-      </h1>
-      <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
-        找不到此頁面
-      </p>
-      <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
-        請在次檢查是否有輸入錯誤,如果還有問題聯繫：support@ssangyongsports.org
-      </p>
-      <Link
-        href="/"
-        className="inline-flex text-white bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4"
-      >
-        返回首頁
-        
-      </Link>
-          
-    </div>
-  </div>
-</section>
+Menu
+Tailwind CSS 404 Pages
+Beautifully designed, fully responsive, expertly crafted 404 page examples
+
+404 Page with list of items
+Code
+
+React.js
+
+HTML
+
+Vue.js
+
+Svelte.js
+
+export default () => {
+
+    const navigations = [
+        {
+            icon:
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                </svg>,
+            title: "Resources",
+            desc: "Lorem Ipsum is simply dummy text of the printing",
+            href: "javascript:void(0)"
+        },
+        {
+            icon:
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                </svg>,
+            title: "Guides",
+            desc: "Lorem Ipsum is simply dummy text of the printing",
+            href: "javascript:void(0)"
+        },
+        {
+            icon:
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                </svg>,
+            title: "Support",
+            desc: "Lorem Ipsum is simply dummy text of the printing",
+            href: "javascript:void(0)"
+        }
+    ]
+
+    return (
+        <main>
+            <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-start h-screen md:px-8">
+                <div className="max-w-lg mx-auto text-gray-600">
+                    <div className="space-y-3 text-center">
+                        <h3 className="text-indigo-600 font-semibold">
+                            404 Error
+                        </h3>
+                        <p className="text-gray-800 text-4xl font-semibold sm:text-5xl">
+                            Page not found
+                        </p>
+                        <p>
+                            Sorry, the page you are looking for could not be found or has been removed.
+                        </p>
+                    </div>
+                    <div className="mt-12">
+                        <ul className="divide-y">
+                            {
+                                navigations.map((item, idx) => (
+                                    <li key={idx} className="flex gap-x-4 py-6">
+                                        <div className="flex-none w-14 h-14 bg-indigo-50 rounded-full text-indigo-600 flex items-center justify-center">
+                                            {item.icon}
+                                        </div>
+                                        <div className="space-y-1">
+                                            <h4 className="text-gray-800 font-medium">{item.title}</h4>
+                                            <p>
+                                                {item.desc}
+                                            </p>
+                                            <a href={item.href} className="text-sm text-indigo-600 duration-150 hover:text-indigo-400 font-medium inline-flex items-center gap-x-1">
+                                                Learn more
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+                                                    <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    )
+}
+404 Page with logo
+Code
+
+Centered 404 Page with tow links
+Code
+
+React.js
+
+HTML
+
+Vue.js
+
+Svelte.js
+
+export default () => {
+    return (
+        <main>
+            <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-start h-screen md:px-8">
+                <div className="max-w-lg mx-auto space-y-3 text-center">
+                    <h3 className="text-indigo-600 font-semibold">
+                        404 錯誤
+                    </h3>
+                    <p className="text-gray-800 text-4xl font-semibold sm:text-5xl">
+                        找不到你尋找的頁面
+                    </p>
+                    <p className="text-gray-600">
+                        很抱歉，你尋找頁面不存在，有可能是連接錯誤或是頁面被刪除了
+                    </p>
+                    <div className="flex flex-wrap items-center justify-center gap-3">
+                        <Link href="/" className="block py-2 px-4 text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg">
+                            返回
+                        </Link>
+                        <Link href="/contact" className="block py-2 px-4 text-gray-700 hover:bg-gray-50 font-medium duration-150 active:bg-gray-100 border rounded-lg">
+                            聯繫客服
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </main>
 ;
 }
