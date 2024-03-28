@@ -1,6 +1,7 @@
 import { Button } from "flowbite-react";
 function C123() {
   return (
+        <section key="1" className="bg-[#f0f9ff] py-16">
 <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center mb-12">聯絡我們</h2>
         <div className="flex justify-center gap-8 mb-16">
