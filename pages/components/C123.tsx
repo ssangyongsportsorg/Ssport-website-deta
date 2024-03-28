@@ -8,22 +8,22 @@ function C123() {
           <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center">
             <MessageCircleIcon className="text-4xl text-gray-700 mb-4" />
             <h3 className="text-xl font-semibold mb-2">聯繫我們</h3>
-            <p>Start a conversation with our team and get the answers you need</p>
+            <p>ㄨㄨㄨㄨ我們團隊會用最快的速度回覆你的問題。</p>
           </div>
           <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center">
             <PhoneIcon className="text-4xl text-gray-700 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Call us</h3>
-            <p>Give us a call at 1 (800) 111-2222 8:30am - 5:30pm PST Monday to Friday</p>
+            <h3 className="text-xl font-semibold mb-2">與我們在線聊天</h3>
+            <p>與客服線上進行對話</p>
           </div>
           <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center">
             <TwitterIcon className="text-4xl text-gray-700 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Follow us</h3>
-            <p>Stay up to date with the latest news and information</p>
+            <h3 className="text-xl font-semibold mb-2">論壇</h3>
+            <p>在論壇與大家討論問題。</p>
           </div>
         </div>
         <div className="text-center">
-          <h3 className="text-2xl font-semibold mb-4">Can't find what you're looking for?</h3>
-          <Button className="bg-blue-600 text-white">Submit a request</Button>
+          <h3 className="text-2xl font-semibold mb-4">想要查看工單狀態?</h3>
+          <Button className="bg-blue-600 text-white">立刻前往查看</Button>
         </div>
       </div>
     </section>
