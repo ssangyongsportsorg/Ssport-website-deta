@@ -1,6 +1,6 @@
 import Supportchoice from './components/supportchoice';
 import Supporthero from './components/supporthero';
-import C123 from './components/c123';
+import C123 from './components/C123';
 import styles from './components/docsearch.module.css';
 import Ticket from './components/ticket';
 import Head from 'next/head'
