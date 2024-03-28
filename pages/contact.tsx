@@ -15,13 +15,6 @@ function C() {
    if (mode === 'status') {
     subjectDefaultValue = '報告錯誤(不要更改此處,有助於加速回復)';
   },
-let input = '';
-  if (mode === 'tv') {
-    subjectDefaultValue = '我想要購買雙龍體育TV會員(不要更改此處,有助於加速回復)';
-  }
-   if (mode === 'status') {
-    subjectDefaultValue = '你好👋，我發現__服務出現__，錯誤大概';
-  }
 
   return (
         <div>
