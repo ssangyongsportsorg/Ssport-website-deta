@@ -28,7 +28,7 @@ function C() {
       有任何問題，立刻聯繫我們😊
     </p>
     <form
-              action="https://meet-ssangyongsports.koyeb.app"
+              action="https://contact-api.ssangyongsports.eu.org"
               name="聯繫表單"
               method="POST"
     className="space-y-8"
