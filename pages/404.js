@@ -1,23 +1,6 @@
 import Link from 'next/link';
 export default function Custom404() {
-  return Editor with AI
-
-Menu
-Tailwind CSS 404 Pages
-Beautifully designed, fully responsive, expertly crafted 404 page examples
-
-404 Page with list of items
-Code
-
-React.js
-
-HTML
-
-Vue.js
-
-Svelte.js
-
-export default () => {
+  
 
     const navigations = [
         {
