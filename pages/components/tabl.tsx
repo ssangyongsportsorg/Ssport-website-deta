@@ -4,7 +4,7 @@ import styles from './Button.module.css';
 
 function Tabl() {
   return (
-    <section style="background-color: blue;">
+    <section style={{ backgroundColor: 'blue' }}>
       <Image
           className="w-full"
           src="https://static.remove.bg/seperator-start.svg"
