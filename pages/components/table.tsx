@@ -6,6 +6,14 @@ function table() {
   return (
 <section>
   <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+    {/* 在電腦模式下顯示圖片在左側 */}
+    <div className="hidden md:block">
+      <Image
+        className="w-full"
+        src="/slb.png"
+        alt="雙龍職棒"
+      />
+    </div>
     <div className="mt-4 md:mt-0">
       <h2 className={`mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white `}>
         雙龍
@@ -33,16 +41,8 @@ function table() {
         </svg>
       </a>
     </div>
-    {/* 在手機模式下顯示圖片 */}
+    {/* 在手機模式下顯示圖片在下方 */}
     <div className="md:hidden">
-      <Image
-        className="w-full"
-        src="/slb.png"
-        alt="雙龍職棒"
-      />
-    </div>
-    {/* 在非手機模式下顯示圖片 */}
-    <div className="hidden md:block">
       <Image
         className="w-full"
         src="/slb.png"
@@ -51,7 +51,6 @@ function table() {
     </div>
   </div>
 </section>
-
  )
 }
 
