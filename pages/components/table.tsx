@@ -6,23 +6,13 @@ function table() {
   return (
 <section>
   <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-    <Image
-      className="w-full dark:hidden"
-      src="/slb.png"
-      alt="雙龍職棒"
-    />
-    <Image
-      className="w-full hidden dark:block"
-      src="/slb.png"
-      alt="雙龍職棒"
-    />
     <div className="mt-4 md:mt-0">
       <h2 className={`mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white `}>
         雙龍
-                    <span className={styles.abc}>職棒</span>
+        <span className={styles.abc}>職棒</span>
       </h2>
       <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
-          雙龍職籃是雙龍體育旗下的體育組織,總共有四支隊伍,第一屆尚未開打敬請期待
+        雙龍職籃是雙龍體育旗下的體育組織,總共有四支隊伍,第一屆尚未開打敬請期待
       </p>
       <a
         href="https://slb.ssangyongsports.eu.org/"
@@ -42,6 +32,22 @@ function table() {
           />
         </svg>
       </a>
+    </div>
+    {/* 在手機模式下顯示圖片 */}
+    <div className="md:hidden">
+      <Image
+        className="w-full"
+        src="/slb.png"
+        alt="雙龍職棒"
+      />
+    </div>
+    {/* 在非手機模式下顯示圖片 */}
+    <div className="hidden md:block">
+      <Image
+        className="w-full"
+        src="/slb.png"
+        alt="雙龍職棒"
+      />
     </div>
   </div>
 </section>
