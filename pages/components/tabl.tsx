@@ -15,7 +15,7 @@ function Tabl() {
           雙龍職籃是雙龍體育旗下的體育組織,總共有四支隊伍,第一屆冠軍由steven帶領拿下冠軍
           </p>
           <a
-            href="https://sba.ssangyongsports.eu.org/"
+            href="https://sba.ssangyongsports.org/"
             className="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
           >
            更多資訊
