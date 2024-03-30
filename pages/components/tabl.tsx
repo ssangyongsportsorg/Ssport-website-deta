@@ -4,10 +4,10 @@ import styles from './Button.module.css';
 
 function Tabl() {
   return (
-    <section style={{ backgroundColor: '#ffefd5' }}>
+    <section style={{ backgroundColor: '#98FB98' }}>
       <Image
           className="w-full"
-          src="/home.svg"
+          src="https://imgur.com/oHC2IaR"
           alt="dashboard image"
         />
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
