@@ -4,7 +4,12 @@ import styles from './Button.module.css';
 
 function table() {
   return (
-<section>
+    <section style={{ backgroundColor: '#ffefd5' }}>
+      <Image
+          className="w-full"
+          src="/home.svg"
+          alt="dashboard image"
+        />
   <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
     {/* 在電腦模式下顯示圖片在左側 */}
     <div className="hidden md:block">
