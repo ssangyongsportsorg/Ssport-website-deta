@@ -4,7 +4,7 @@ import styles from './Button.module.css';
 function sport() {
 return (
   <>
-<section style={{ backgroundColor: '#f1f2f6' }}>
+<section style={{ backgroundColor: '#f7f8fa' }}>
   <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16">
      <motion.h2 className={`mb-6 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 lg:text-center dark:text-white md:text-4xl `}>
       我們的旗下
