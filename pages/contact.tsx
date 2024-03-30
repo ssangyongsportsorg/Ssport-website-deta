@@ -33,6 +33,8 @@ function C() {
               method="POST"
     className="space-y-8"
             >
+<!-- 在 HTML 表单中添加隐藏的 honeypot 字段 -->
+<input type="text" name="honeypot" />
         
              <label
          htmlFor="name"
