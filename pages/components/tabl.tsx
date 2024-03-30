@@ -7,7 +7,7 @@ function Tabl() {
     <section style={{ backgroundColor: '#ffefd5' }}>
       <Image
           className="w-full"
-          src="https://static.remove.bg/seperator-start.svg"
+          src="/home.svg"
           alt="dashboard image"
         />
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
