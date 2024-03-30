@@ -34,7 +34,7 @@ function C() {
             className="space-y-8"
           >
             {/* 在 HTML 表单中添加隐藏的 honeypot 字段 */}
-            <input type="text" name="honeypot" />
+            <input type="text" name="honeypot" style={{ display: 'none' }} />
             <label
               htmlFor="name"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
