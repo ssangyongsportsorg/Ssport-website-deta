@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const status = () => (
+const Status = () => (
   <>
     <Head>
       <style>{`
@@ -20,6 +20,18 @@ const status = () => (
           height: 100%;
           z-index: 999999;
         }
+        @media (max-width: 768px) {
+          #iframe-container {
+            position: relative;
+            height: auto;
+            min-height: 100vh;
+          }
+          #iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+          }
+        }
         `}</style>
     </Head>
     <div id="iframe-container">
@@ -28,4 +40,4 @@ const status = () => (
   </>
 );
 
-export default status;
+export default Status;
