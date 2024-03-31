@@ -64,11 +64,6 @@ function game() {
       </div>
     </div>
   </div>
-<Image
-          className="w-full"
-          src="/home3.png"
-          alt="dashboard image"
-        />
 </section>
 
  )
