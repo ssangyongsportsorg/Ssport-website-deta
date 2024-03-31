@@ -1,4 +1,4 @@
- import Link from 'next/link';
+import Link from 'next/link';
 import styles from './Button.module.css';
 import a from './a.module.css';
 import Image from 'next/image';
@@ -64,6 +64,11 @@ function game() {
       </div>
     </div>
   </div>
+<Image
+          className="w-full"
+          src="/home3.png"
+          alt="dashboard image"
+        />
 </section>
 
  )
