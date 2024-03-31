@@ -4,6 +4,11 @@ import a from './a.module.css';
 function game() {
   return ( 
 <section className="bg-white dark:bg-gray-900 antialiased">
+<Image
+          className="w-full"
+          src="/home2.png"
+          alt="dashboard image"
+        />
   <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
     <div className="max-w-3xl mx-auto text-center">
       <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
