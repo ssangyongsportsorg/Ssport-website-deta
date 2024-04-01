@@ -16,7 +16,7 @@ function chat() {
             
             <iframe src="https://feedback.ssangyongsports.eu.org/s/clufnf4ri0000ahstpq70gczz" 
             width="100%"
-            height="200%"
+            height="600%"
           ></iframe>
     </div>
 </section>
