@@ -1,43 +1,24 @@
-import Head from 'next/head';
+import Head from 'next/head'
+import styles from './components/Button.module.css';
+function chat() {
+  return (   
+        <div>
+ <section className="bg-white dark:bg-gray-900">
+  <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
 
-const Status = () => (
-  <>
-    <Head>
-      <style>{`
-        body, html {
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          height: 100%;
-        }
-        #iframe-container {
-          position: fixed;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 999999;
-        }
-        @media (max-width: 768px) {
-          #iframe-container {
-            position: relative;
-            height: auto;
-            min-height: 100vh;
-          }
-          #iframe-container iframe {
-            width: 100%;
-            height: 100%;
-            min-height: 100vh;
-          }
-        }
-        `}</style>
-    </Head>
-    <div id="iframe-container">
-      <iframe src="https://feedback.ssangyongsports.eu.org/s/clufnf4ri0000ahstpq70gczz" frameBorder="0" />
+        <title>報告故障</title>
+        <meta name="description" content="報告錯誤" />
+      </Head>      
+
+            <iframe src="https://feedback.ssangyongsports.eu.org/s/clufnf4ri0000ahstpq70gczz" 
+            width="100%"
+            height="600px"
+          ></iframe>
     </div>
-  </>
-);
+</section>
+</div>
 
-export default Status;
+  )
+}
+
+export default chat
