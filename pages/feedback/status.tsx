@@ -3,7 +3,7 @@ import styles from './components/Button.module.css';
 function chat() {
   return (   
         <div>
- <section className="bg-white dark:bg-gray-900">
+ <section style={{ backgroundColor: '#1F4172' }}>
   <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
 <Head>
         <title>報告故障</title>
