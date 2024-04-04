@@ -1,11 +1,11 @@
-import { getAllTags, getPostsByTag } from '../../lib/posts'
-import Layout from '../../components/Layout'
+import { getAllTags, getPostsByTag } from '../../../lib/posts'
+
 import PostList from '../../components/PostList'
 import Head from 'next/head'
 
 export default function TagPage({ posts, tag }) {
   return (
-    <Layout>
+    <div>
       <Head>
         <title>标签: {tag} - 雙龍體育部落格</title>
         <meta
@@ -23,7 +23,7 @@ export default function TagPage({ posts, tag }) {
           <PostList posts={posts} />
         </div>
       </div>
-    </Layout>
+    </div>
   )
 }
 
