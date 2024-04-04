@@ -7,7 +7,19 @@ export default function TagPage({ posts, tag }) {
   return (
     <div>
       <h1>Posts tagged with {tag}</h1>
-      <PostList posts={posts} />
+         <div>
+      {posts.map((post) => (
+        <div key={post.id}>
+          <Link href={`/posts/${post.id}`}>
+            <a>
+              <h2>{title}</h2>
+              <p>{date}</p>
+            </a>
+          </Link>
+         
+        </div>
+      ))}
+    </div>
     </div>
   )
 }
