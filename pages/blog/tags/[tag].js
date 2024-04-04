@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 export default function TagPage({ posts, tag }) {
   return (
-    <Layout>
+    <div>
       <Head>
         <title>标签: {tag} - 雙龍體育部落格</title>
         <meta
@@ -78,7 +78,7 @@ export default function TagPage({ posts, tag }) {
           </div>
         </div>
       </div>
-    </Layout>
+    </div>
   )
 }
 
