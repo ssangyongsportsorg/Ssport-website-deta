@@ -6,7 +6,7 @@ import PostList from '../../components/PostList'
 export default function TagPage({ posts, tag }) {
   return (
     <div>
-      <h1>Posts tagged with "{tag}"</h1>
+      <h1>Posts tagged with {tag}</h1>
       <PostList posts={posts} />
     </div>
   )
