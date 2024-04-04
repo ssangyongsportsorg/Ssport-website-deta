@@ -1,5 +1,5 @@
 // pages/tags/[tag].js
-import { getAllTags, getPostsByTag } from '../../lib/posts'
+import { getAllTags, getPostsByTag } from '../../../lib/posts'
 
 import PostList from '../../components/PostList'
 
