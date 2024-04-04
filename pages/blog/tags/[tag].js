@@ -2,7 +2,7 @@ import { getAllTags, getPostsByTag } from '../../../lib/posts'
 import Link from 'next/link';
 import PostList from '../../components/PostList'
 import Head from 'next/head'
-
+import Image from 'next/image';
 export default function TagPage({ posts, tag }) {
   return (
     <div>
