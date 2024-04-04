@@ -10,7 +10,7 @@ export default function TagPage({ posts, tag }) {
          <div>
       {posts.map((post) => (
         <div key={post.id}>
-          <Link href={`/posts/${post.id}`}>
+          <Link href={`/posts/${slug}`}>
             <a>
               <h2>{title}</h2>
               <p>{date}</p>
