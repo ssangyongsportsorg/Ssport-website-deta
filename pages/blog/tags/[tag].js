@@ -1,14 +1,14 @@
 // pages/tags/[tag].js
 import { getAllTags, getPostsByTag } from '../../lib/posts'
-import Layout from '../../components/Layout'
+
 import PostList from '../../components/PostList'
 
 export default function TagPage({ posts, tag }) {
   return (
-    <Layout>
+    <div>
       <h1>Posts tagged with "{tag}"</h1>
       <PostList posts={posts} />
-    </Layout>
+    </div>
   )
 }
 
