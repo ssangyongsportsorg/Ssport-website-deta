@@ -5,7 +5,9 @@ export default function Document() {
     <Html lang="zh-tw">
          
 
-      <Head />
+       <Head>
+          <script defer src="https://analytics.us.umami.is/script.js" data-website-id="d50a722e-2f77-445a-bb1d-0e130f327211"></script>
+        </Head>
       
       <body>
       
