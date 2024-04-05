@@ -14,16 +14,21 @@ export default function Head() {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link href="/" active>
-          返回官網
-        </Navbar.Link>
-        <Navbar.Link as={Link} href="/contact">
-          聯繫客服
-        </Navbar.Link>
-        <Navbar.Link href="https://support.ssangyongsports.eu.org">查看工單狀態</Navbar.Link>
-        <Navbar.Link href="
-https://discuss.ssangyongsports.eu.org/">論壇</Navbar.Link>
-        <Navbar.Link href="https://status.ssangyongsports.eu.org/">狀態</Navbar.Link>
+        <Navbar.Link href="/" active onClick={() => setMobileMenuOpen(false)}>
+  返回官網
+</Navbar.Link>
+<Navbar.Link as={Link} href="/contact" onClick={() => setMobileMenuOpen(false)}>
+  聯繫客服
+</Navbar.Link>
+<Navbar.Link href="https://support.ssangyongsports.eu.org" onClick={() => setMobileMenuOpen(false)}>
+  查看工單狀態
+</Navbar.Link>
+<Navbar.Link href="https://discuss.ssangyongsports.eu.org/" onClick={() => setMobileMenuOpen(false)}>
+  論壇
+</Navbar.Link>
+<Navbar.Link href="https://status.ssangyongsports.eu.org/" onClick={() => setMobileMenuOpen(false)}>
+  狀態
+</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
 
