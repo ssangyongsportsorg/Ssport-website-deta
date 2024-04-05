@@ -14,6 +14,17 @@ export const authOptions = {
     GoogleProvider({
       clientId: process.env.Google_ID,
       clientSecret: process.env.Google_SECRET,
+    cookies: {
+        pkceCodeVerifier: {
+          name: 'next-auth.pkce.code_verifier',
+          options: {
+            httpOnly: true,
+            sameSite: 'none',
+            path: '/',
+            secure: true,
+          },
+        },
+      },
     }),
     LineProvider({
       clientId: process.env.Line_ID,
