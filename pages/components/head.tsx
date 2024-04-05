@@ -231,8 +231,7 @@ export default function Head() {
           </div>
         </Dialog.Panel>
       </Dialog>
-    <br />
-        <br />
+   
     </header>
   )
 }
