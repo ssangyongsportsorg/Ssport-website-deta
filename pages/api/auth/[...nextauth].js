@@ -4,6 +4,9 @@ import GoogleProvider from "next-auth/providers/google"
 import LineProvider from "next-auth/providers/line"
 import DiscordProvider from "next-auth/providers/discord"
 
+// 管理员邮箱地址列表
+const adminEmails = ['Ssangyongsports1@gmail.com', 'admin@example.com']
+
 export const authOptions = {
   // 配置一个或多个认证提供者
   providers: [
@@ -40,7 +43,7 @@ export const authOptions = {
 
       // 根据用户信息赋予角色
       if (user && user.email) {
-        const isAdmin = user.email === 'Ssangyongsports1@gmail.com' || user.email.endsWith('@gmail.com')
+        const isAdmin = adminEmails.includes(user.email)
         token.role = isAdmin ? 'admin' : 'user'
       }
 
