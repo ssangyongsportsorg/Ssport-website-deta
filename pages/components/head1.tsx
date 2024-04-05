@@ -1,5 +1,6 @@
 "use client";
 import { Fragment, useState } from 'react'
+import Image from 'next/image'
 import Link from "next/link";
 import { Navbar } from "flowbite-react";
 export default function Head() {
