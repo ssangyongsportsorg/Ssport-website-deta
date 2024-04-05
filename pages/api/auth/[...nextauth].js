@@ -5,7 +5,7 @@ import LineProvider from "next-auth/providers/line"
 import DiscordProvider from "next-auth/providers/discord"
 
 export const authOptions = {
-  // 配置一個或多個驗證提供者
+  // 配置一个或多个认证提供者
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_ID,
@@ -29,23 +29,25 @@ export const authOptions = {
     }),
   ],
   theme: {
-    logo: "/logo.png", // 圖片的絕對URL
+    logo: "/logo.png", // 图片的绝对URL
   },
   callbacks: {
     async jwt({ token, account, user }) {
-      // 在登錄後將訪問令牌持久化到令牌中
+      // 在登录后将访问令牌持久化到令牌中
       if (account) {
         token.accessToken = account.access_token
       }
 
-      // 根據用戶信息賦予角色
-      const isAdmin = user.email === 'Ssangyongsports1@gmail.com' || user.email.endsWith('@example.com')
-      token.role = isAdmin ? 'admin' : 'user'
+      // 根据用户信息赋予角色
+      if (user && user.email) {
+        const isAdmin = user.email === 'Ssangyongsports1@gmail.com' || user.email.endsWith('@example.com')
+        token.role = isAdmin ? 'admin' : 'user'
+      }
 
       return token
     },
     async session({ session, token }) {
-      // 向客戶端發送訪問令牌等屬性
+      // 向客户端发送访问令牌等属性
       session.accessToken = token.accessToken
       session.user.role = token.role
       return session
