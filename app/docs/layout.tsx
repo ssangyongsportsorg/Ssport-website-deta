@@ -8,15 +8,11 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
   return (
  <div>
 <DocsLayout
-    
-    tree={tree}
-    nav={
-          enabled="false"
-          
-       
-      ),
-    }}
-  >
+  tree={tree}
+  nav={{
+    enabled: false
+  }}
+>
   <Head1 />
     {children}
     </DocsLayout>
