@@ -5,7 +5,7 @@ import type { ReactNode } from 'react'
 import 'next-docs-ui/style.css'
 import '@/styles/globals.css'
 import Footer from '@/pages/components/footer'
-
+import Head1 from '../pages/components/head1';
 export default function Layout({ children }: { children: ReactNode }) {
   const CrispWithNoSSR = dynamic(
     () => import('./components/crisp')
@@ -15,6 +15,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <html lang="zh-tw">
     <CrispWithNoSSR />
     <body>
+<Head1 />
 <RootProvider>        {children}</RootProvider>
     </body>
           <Footer />   
