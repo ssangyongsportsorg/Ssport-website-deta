@@ -13,6 +13,10 @@ export const authOptions = {
    GoogleProvider({
       clientId: process.env.Google_ID,
       clientSecret: process.env.Google_SECRET,
+authorization: {
+    params: {},
+  },
+  checks: ['none'],
     }),  
      LineProvider({
       clientId: process.env.Line_ID,
