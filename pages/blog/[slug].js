@@ -26,7 +26,7 @@ export default function Post({frontmatter, content}) {
       <Breadcrumb.Item href={`/blog/`}>
         部落格
       </Breadcrumb.Item>
-      <Breadcrumb.Item href={`/blog/tags/${tags}`}>Projects</Breadcrumb.Item>
+      <Breadcrumb.Item href={`/blog/tags/${tags}`}>{tags}</Breadcrumb.Item>
       
     </Breadcrumb>
     <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
