@@ -13,7 +13,7 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
     enabled: false
   }}
 >
-  <Head1 />
+  
     {children}
     </DocsLayout>
 </div>
