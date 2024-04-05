@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/image';
 import fs from "fs";
-
+import { Breadcrumb } from "flowbite-react";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it"; // import the markdown-it library
 import md from "markdown-it"; // import the markdown-it library
@@ -21,8 +21,14 @@ export default function Post({frontmatter, content}) {
         
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
        
-  <div className="pt-10 pb-16">
-    <div className="text-sm font-medium text-gray-500">{tags}</div>
+  <div className="pt-10 pb-16">  
+    <Breadcrumb aria-label="Default breadcrumb example">
+      <Breadcrumb.Item href={`/blog/`}>
+        部落格
+      </Breadcrumb.Item>
+      <Breadcrumb.Item href={`/blog/tags/${tags}`}>Projects</Breadcrumb.Item>
+      
+    </Breadcrumb>
     <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
               {title}
 
