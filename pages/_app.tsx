@@ -22,7 +22,7 @@ export default function App({
         <br />
         <br />
         <Component {...pageProps} />
-        {!isRestrictedRoute && <Footer />}
+        <Footer />
       </SessionProvider>
     </div>
   )
