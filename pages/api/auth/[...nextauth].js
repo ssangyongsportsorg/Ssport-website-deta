@@ -1,16 +1,26 @@
-import NextAuth from "next-auth"
-import GithubProvider from "next-auth/providers/github"
-import GoogleProvider from "next-auth/providers/google"
+import NextAuth from "next-auth";
+import GithubProvider from "next-auth/providers/github";
+import GoogleProvider from "next-auth/providers/google";
 
 export const authOptions = {
   // Configure one or more authentication providers
   providers: [
-        GoogleProvider({
+    GoogleProvider({
       clientId: process.env.Google_ID,
       clientSecret: process.env.Google_SECRET,
     }),
-    // ...add more providers here
   ],
-}
+  cookies: {
+    pkceCodeVerifier: {
+      name: "next-auth.pkce.code_verifier",
+      options: {
+        httpOnly: true,
+        sameSite: "none",
+        path: "/",
+        secure: true,
+      },
+    },
+  },
+};
 
-export default NextAuth(authOptions)
+export default NextAuth(authOptions);
