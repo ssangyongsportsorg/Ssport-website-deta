@@ -8,13 +8,17 @@ export default function Head() {
   return (
 
 <Navbar fluid rounded>
-      <Navbar.Brand as={Link} href="https://flowbite-react.com">
-        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
+      <Navbar.Brand as={Link} href="/support">
+        <Image
+      src="/supportlogo.png"
+      
+      alt="雙龍體育幫助"
+    />
+        
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link href="/" active onClick={() => setMobileMenuOpen(false)}>
+        <Navbar.Link href="/"  onClick={() => setMobileMenuOpen(false)}>
   返回官網
 </Navbar.Link>
 <Navbar.Link as={Link} href="/contact" onClick={() => setMobileMenuOpen(false)}>
