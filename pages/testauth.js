@@ -1,25 +1,22 @@
-import { getSession } from 'next-auth/react'
+import { useSession } from "next-auth/react"
 
-export const getServerSideProps = async (context) => {
-  const session = await getSession(context)
+function AdminPage() {
+  const { data: session } = useSession()
 
-  // 檢查用戶是否登錄以及是否為管理員角色
-  if (!session || session.user.role !== 'admin') {
-    return {
-      redirect: {
-        destination: '/',
-        permanent: false,
-      },
-    }
+  if (!session) {
+    return <div>Loading...</div>
   }
 
-  return {
-    props: {},
+  if (session.user.role !== "admin") {
+    return <div>Access Denied</div>
   }
-}
 
-const AdminPage = () => {
-  return <div>This is an admin page</div>
+  return (
+    <div>
+      <h1>Admin Page</h1>
+      {/* 管理员页面内容 */}
+    </div>
+  )
 }
 
 export default AdminPage
