@@ -13,10 +13,8 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
     nav={{
       component: (
         <Nav
-          title={<>雙龍體育幫助中心</>}
           enabled="false"
           
-          items={[{ href: "/", children: "返回官網" }]}
         />
       ),
     }}
