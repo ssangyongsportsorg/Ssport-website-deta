@@ -1,28 +1,29 @@
 import Supportchoice from './components/supportchoice';
 import Head1 from './components/head1';
 import Supporthero from './components/supporthero';
-import Supportend from './components/supportend;
+import Supportend from './components/supportend'; // 添加缺失的引号
 import styles from './components/docsearch.module.css';
 import Ticket from './components/ticket';
-import Head from 'next/head'
-import { DocSearch } from '@docsearch/react'
+import Head from 'next/head';
+import { DocSearch } from '@docsearch/react';
 import '@docsearch/css';
 import clsx from "clsx";
+
 const support = () => {
   return (
-       <>
-<Head>
+    <>
+      <Head>
         <title>雙龍體育幫助</title>
         <meta name="description" content="歡迎來到雙龍體育幫助中心,任何問題立刻聯繫" />
       </Head>      
       <div>
-<Head1 />
+        <Head1 />
         <Supporthero />
         <Supportchoice />
-       <Supportend />             
+        <Supportend />             
       </div>
     </>
-      );
+  );
 }
 
 export default support;
