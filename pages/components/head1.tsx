@@ -10,11 +10,7 @@ export default function Head() {
 
 <Navbar fluid rounded>
       <Navbar.Brand as={Link} href="/support">
-        <Image
-      src="/supportlogo.png"
-      
-      alt="雙龍體育幫助"
-    />
+                   <img className="h-8 w-auto" src="/logo.png" alt="" />
         
       </Navbar.Brand>
       <Navbar.Toggle />
