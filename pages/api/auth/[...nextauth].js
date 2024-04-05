@@ -3,49 +3,54 @@ import GithubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
 import LineProvider from "next-auth/providers/line"
 import DiscordProvider from "next-auth/providers/discord"
+
 export const authOptions = {
-  // Configure one or more authentication providers
+  // 配置一個或多個驗證提供者
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_ID,
       clientSecret: process.env.GITHUB_SECRET,
     }),
-   GoogleProvider({
+    GoogleProvider({
       clientId: process.env.Google_ID,
       clientSecret: process.env.Google_SECRET,
-authorization: {
-    params: {},
-  },
-  checks: ['none'],
-    }),  
-     LineProvider({
+      authorization: {
+        params: {},
+      },
+      checks: ['none'],
+    }),
+    LineProvider({
       clientId: process.env.Line_ID,
       clientSecret: process.env.Line_SECRET,
-    }),  
-  DiscordProvider({
+    }),
+    DiscordProvider({
       clientId: process.env.Discord_ID,
       clientSecret: process.env.Discord_SECRET,
-    }),  ],
+    }),
+  ],
   theme: {
-  logo: "/logo.png", // Absolute URL to image
-},
-callbacks: {
-  async jwt({ token, account }) {
-    // Persist the OAuth access_token to the token right after signin
-    if (account) {
-      token.accessToken = account.access_token
-    }
-    return token
+    logo: "/logo.png", // 圖片的絕對URL
   },
-  async session({ session, token, user }) {
-    // Send properties to the client, like an access_token from a provider.
-    session.accessToken = token.accessToken
-    return session
-    },
+  callbacks: {
+    async jwt({ token, account, user }) {
+      // 在登錄後將訪問令牌持久化到令牌中
+      if (account) {
+        token.accessToken = account.access_token
+      }
 
+      // 根據用戶信息賦予角色
+      const isAdmin = user.email === 'Ssangyongsports1@gmail.com' || user.email.endsWith('@example.com')
+      token.role = isAdmin ? 'admin' : 'user'
+
+      return token
+    },
+    async session({ session, token }) {
+      // 向客戶端發送訪問令牌等屬性
+      session.accessToken = token.accessToken
+      session.user.role = token.role
+      return session
+    },
   },
 }
-
-
 
 export default NextAuth(authOptions)
