@@ -40,7 +40,7 @@ export const authOptions = {
 
       // 根据用户信息赋予角色
       if (user && user.email) {
-        const isAdmin = user.email === 'Ssangyongsports1@gmail.com' || user.email.endsWith('@example.com')
+        const isAdmin = user.email === 'Ssangyongsports1@gmail.com' || user.email.endsWith('@gmail.com')
         token.role = isAdmin ? 'admin' : 'user'
       }
 
