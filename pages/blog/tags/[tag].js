@@ -32,7 +32,7 @@ export default function TagPage({ posts, tag }) {
                               <Link
                                 key={tag}
                                 className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 hover:bg-blue-200 dark:hover:bg-blue-300 dark:text-blue-800 mb-2"
-                                href={`/tags/${tag}`}
+                                href={`/`}
                               >
                                 #{tag}
                               </Link>
