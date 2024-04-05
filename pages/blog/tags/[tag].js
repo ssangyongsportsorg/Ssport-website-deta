@@ -6,7 +6,7 @@ export default function TagPage({ posts, tag }) {
   return (
     <div>
       <Head>
-        <title>标签: {tag} - 雙龍體育部落格</title>
+        <title>標籤: {tag} - 雙龍體育部落格</title>
         <meta
           name="description"
           content={`查看所有標記為 "${tag}" 的文章`}
