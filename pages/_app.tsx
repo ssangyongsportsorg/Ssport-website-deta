@@ -19,8 +19,7 @@ export default function App({
       <div className="bg-gradient h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
       <SessionProvider session={session}>
         {!isRestrictedRoute && <Head />}
-        <br />
-        <br />
+       
 <div className="pt-16">
         <Component {...pageProps} />
         <Footer />
