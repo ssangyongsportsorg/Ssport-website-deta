@@ -43,7 +43,7 @@ function supportend() {
             聯繫我們
           </h3>
         </Link>
-        <div
+        <button
           onclick="$crisp.push(['do', 'chat:open'])"
         >
           <span
@@ -72,7 +72,7 @@ function supportend() {
           <h3 className="font-semibold text-xl text-gray-900 dark:text-white mt-3.5">
             在線支援
           </h3>
-        </div>
+        </button>
       </div>
     </div>
   </div>
