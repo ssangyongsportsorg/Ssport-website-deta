@@ -44,7 +44,7 @@ function supportend() {
                 聯繫我們
               </h3>
             </Link>
-            <button
+            <div
               onClick={() => window.$crisp && window.$crisp.push(['do', 'chat:open'])}
               className="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
             >
@@ -74,7 +74,7 @@ function supportend() {
               <h3 className="font-semibold text-xl text-gray-900 dark:text-white mt-3.5">
                 在線支援
               </h3>
-            </button>
+            </div>
           </div>
         </div>
       </div>
