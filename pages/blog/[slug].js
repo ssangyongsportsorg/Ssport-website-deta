@@ -14,8 +14,8 @@ export default function Post({frontmatter, content}) {
 
     return <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
   <Head>
-    <title>{title}-雙龍體育blog</title>
-    <meta name="description" content={`${title}-雙龍體育blog`} />
+    <title>{`${title}-雙龍體育blog`}</title>
+    <meta name="description" content={`${seo}-雙龍體育blog`} />
   </Head>     
 
         
