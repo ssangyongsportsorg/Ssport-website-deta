@@ -44,7 +44,7 @@ function supportend() {
           </h3>
         </Link>
         <button
-          onclick="$crisp.push(['do', 'chat:open'])"
+          onClick="$crisp.push(['do', 'chat:open'])"
         >
           <span
             style={{
