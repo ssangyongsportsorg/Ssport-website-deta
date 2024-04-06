@@ -9,6 +9,9 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
  <div>
 <DocsLayout
   tree={tree}
+  sidebar={{
+    enabled: false
+  }}
   nav={{
     enabled: false
   }}
