@@ -20,7 +20,7 @@ export default function App({
       <SessionProvider session={session}>
         {!isRestrictedRoute && <Head />}
        
-<div className="pt-16">
+<div className="pt-14">
         <Component {...pageProps} />
         <Footer />
 </div>
