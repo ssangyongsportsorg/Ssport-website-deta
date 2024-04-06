@@ -8,6 +8,11 @@ import Head from 'next/head';
 import { DocSearch } from '@docsearch/react';
 import '@docsearch/css';
 import clsx from "clsx";
+import dynamic from 'next/dynamic'; // 添加动态导入
+
+const CrispWithNoSSR = dynamic(
+  () => import('../app/components/crisp')
+);
 
 const support = () => {
   return (
@@ -20,7 +25,9 @@ const support = () => {
         <Head1 />
         <Supporthero />
         <Supportchoice />
-        <Supportend />             
+        <Supportend />
+        {/* 添加 CrispWithNoSSR 组件 */}
+        <CrispWithNoSSR />
       </div>
     </>
   );
