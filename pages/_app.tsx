@@ -21,8 +21,10 @@ export default function App({
         {!isRestrictedRoute && <Head />}
         <br />
         <br />
+<div className="pt-16">
         <Component {...pageProps} />
         <Footer />
+</div>
       </SessionProvider>
     </div>
   )
