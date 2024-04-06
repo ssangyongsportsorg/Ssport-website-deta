@@ -1,6 +1,6 @@
 ---
-title: 如何使用 live chat 聯繫我們
-description: 如何使用 live chat 聯繫我們
+title: 如何註冊雙龍體育論壇
+description: 如何註冊雙龍體育論壇
 ---
 ## 如何在 雙龍體育論壇 論壇註冊帳號
 
