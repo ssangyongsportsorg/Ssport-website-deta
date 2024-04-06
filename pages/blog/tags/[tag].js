@@ -3,6 +3,13 @@ import Link from 'next/link';
 import Head from 'next/head'
 import Image from 'next/image';
 export default function TagPage({ posts, tag }) {
+  // Sort the posts array in descending order by date
+  const sortedPosts = posts.sort((a, b) => {
+    const dateA = new Date(a.frontmatter.date);
+    const dateB = new Date(b.frontmatter.date);
+    return dateB - dateA;
+  });
+
   return (
     <div>
       <Head>
@@ -20,13 +27,14 @@ export default function TagPage({ posts, tag }) {
             </h2>
           </div>
           <div>
-            {posts.map((post) => (
+            {sortedPosts.map((post) => (
               <article key={post.slug} className="bg-white dark:bg-gray-900">
                 <div className="flex justify-between px-4 mx-auto max-w-8xl">
                   <div className="w-full max-w-2xl mx-auto">
                     <div className="divide-y divide-gray-200 dark:divide-gray-700">
                       <div className="py-6">
                         <div className="flex items-center justify-between mb-3 text-gray-500">
+                          <span className="text-sm">{post.frontmatter.date}</span>
                           <div>
                             {post.frontmatter.tags.map((tag) => (
                               <Link
@@ -38,7 +46,6 @@ export default function TagPage({ posts, tag }) {
                               </Link>
                             ))}
                           </div>
-                          <span className="text-sm">{post.frontmatter.date}</span>
                         </div>
                         <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                           <Link href={`/blog/${post.slug}`}>
