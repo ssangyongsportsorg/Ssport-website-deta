@@ -3,11 +3,7 @@ import { RootProvider } from 'next-docs-ui/provider'
 import { Inter } from 'next/font/google'
 import type { ReactNode } from 'react'
 import 'next-docs-ui/style.css'
-import { DocSearch } from '@docsearch/react'
-import a from './docsearch.module.css';
-import '@docsearch/css';
 import '@/styles/globals.css'
-import Supporthero from '../pages/components/supporthero';
 import Footer from '@/pages/components/footer'
 import Head1 from '../pages/components/head1';
 export default function Layout({ children }: { children: ReactNode }) {
@@ -20,7 +16,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <CrispWithNoSSR />
     <body>
 <Head1 />
-      <Supporthero />
+      
 <RootProvider>        {children}</RootProvider>
     </body>
           <Footer />   
