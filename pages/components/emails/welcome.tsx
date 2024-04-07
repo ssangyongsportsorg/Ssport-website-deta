@@ -31,11 +31,11 @@ export const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
       </header>
       <main className="prose max-w-none space-y-4">
         <p>
-          Hi there, thanks for signing up! We're thrilled to have you on board. You've just taken the first step towards
+          Hi there, thanks for signing up We're thrilled to have you on board. You've just taken the first step towards
           supercharging your web development workflow.
         </p>
         <p>
-          To help you get started, we've put together a quick guide to navigating the platform and making the most of
+          To help you get started, we put together a quick guide to navigating the platform and making the most of
           its features.
         </p>
         <ul className="list-disc list-inside">
@@ -45,11 +45,11 @@ export const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
           </li>
           <li>
             <strong>Creating a Project:</strong>
-            Click the "New Project" button to kick off a new web project.
+            Click the  Project button to kick off a new web project.
           </li>
           <li>
             <strong>Deploying:</strong>
-            Once you've built your project, deploy it to the web with a single click.
+            Once you built your project, deploy it to the web with a single click.
           </li>
         </ul>
       </main>
