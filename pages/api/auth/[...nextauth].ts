@@ -28,8 +28,8 @@ export const authOptions: NextAuthOptions = {
     async createUser(message) {
       const params = {
         user: {
-          name: message.user.name,
-          email: message.user.email,
+          name: user.name,
+          email: user.email,
         },
       };
       await sendWelcomeEmail(params); // <-- send welcome email
