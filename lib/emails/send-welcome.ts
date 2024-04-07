@@ -8,7 +8,7 @@ export async function sendWelcomeEmail({name, email}: {name: string | null | und
   try {
     // Send the email using the Resend API
     await resend.emails.send({
-      from: "Marc from Papermark <marc@papermark.io>",
+      from: "Marc from Papermark <support@ssangyongsport.eu.org>",
       to: email as string,
       subject: "Welcome to Papermark!",
       react: emailTemplate,
