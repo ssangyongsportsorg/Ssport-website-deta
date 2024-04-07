@@ -31,7 +31,7 @@ export const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
       </header>
       <main className="prose max-w-none space-y-4">
         <p>
-          Hi there, thanks for signing up We're thrilled to have you on board. You've just taken the first step towards
+          
           supercharging your web development workflow.
         </p>
         <p>
