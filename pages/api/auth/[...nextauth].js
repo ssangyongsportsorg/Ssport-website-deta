@@ -1,61 +1,40 @@
-import NextAuth from "next-auth"
-import GithubProvider from "next-auth/providers/github"
-import GoogleProvider from "next-auth/providers/google"
-import LineProvider from "next-auth/providers/line"
-import DiscordProvider from "next-auth/providers/discord"
+import NextAuth, { type NextAuthOptions } from "next-auth";
+import GoogleProvider from "next-auth/providers/google";
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
+import prisma from "@/lib/prisma";
+import { sendWelcomeEmail } from "@/lib/emails/send-welcome";
 
-// 管理员邮箱地址列表
-const adminEmails = ['ssangyongsports1@gmail.com', 'admin@example.com']
-
-export const authOptions = {
-  // 配置一个或多个认证提供者
+export const authOptions: NextAuthOptions = {
   providers: [
-    GithubProvider({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
-    }),
     GoogleProvider({
-      clientId: process.env.Google_ID,
-      clientSecret: process.env.Google_SECRET,
-      authorization: {
-        params: {},
-      },
-      checks: ['none'],
-    }),
-    LineProvider({
-      clientId: process.env.Line_ID,
-      clientSecret: process.env.Line_SECRET,
-    }),
-    DiscordProvider({
-      clientId: process.env.Discord_ID,
-      clientSecret: process.env.Discord_SECRET,
+      clientId: process.env.GOOGLE_CLIENT_ID as string,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
-  theme: {
-    logo: "/logo.png", // 图片的绝对URL
-  },
+  adapter: PrismaAdapter(prisma),
+  session: { strategy: "jwt" },
   callbacks: {
-    async jwt({ token, account, user }) {
-      // 在登录后将访问令牌持久化到令牌中
-      if (account) {
-        token.accessToken = account.access_token
+    jwt: async ({ token, user }) => {
+      if (!token.email) {
+        return {};
       }
-
-      // 根据用户信息赋予角色
-      if (user && user.email) {
-        const isAdmin = adminEmails.includes(user.email)
-        token.role = isAdmin ? 'admin' : 'user'
+      if (user) {
+        token.user = user;
       }
-
-      return token
-    },
-    async session({ session, token }) {
-      // 向客户端发送访问令牌等属性
-      session.accessToken = token.accessToken
-      session.user.role = token.role
-      return session
+      return token;
     },
   },
-}
+  events: {
+    async createUser(message) {
+      const params = {
+        user: {
+          name: message.user.name,
+          email: message.user.email,
+        },
+      };
+      await sendWelcomeEmail(params); // <-- send welcome email
+    }
+  },
+};
 
-export default NextAuth(authOptions)
+export default NextAuth(authOptions);
