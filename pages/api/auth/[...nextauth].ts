@@ -1,40 +1,16 @@
-import NextAuth, { type NextAuthOptions } from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import prisma from "../../../lib/prisma";
-import { sendWelcomeEmail } from "../../../lib/emails/send-welcome";
+import NextAuth from "next-auth"
+import Providers from "next-auth/providers"
+import { PrismaAdapter } from "@next-auth/prisma-adapter"
+import { PrismaClient } from "@prisma/client"
 
-export const authOptions: NextAuthOptions = {
+const prisma = new PrismaClient()
+
+export default NextAuth({
   providers: [
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID as string,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+    Providers.Google({
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
   adapter: PrismaAdapter(prisma),
-  session: { strategy: "jwt" },
-  callbacks: {
-    jwt: async ({ token, user }) => {
-      if (!token.email) {
-        return {};
-      }
-      if (user) {
-        token.user = user;
-      }
-      return token;
-    },
-  },
-  events: {
-    async createUser(message) {
-      const params = {
-        user: {
-          name: message.user.name,
-          email: message.user.email,
-        },
-      };
-      await sendWelcomeEmail(params); // <-- send welcome email
-    }
-  },
-};
-
-export default NextAuth(authOptions);
+})
